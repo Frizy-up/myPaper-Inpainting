@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.1.21)  25 JAN 2018 03:44
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.1.21)  25 JAN 2018 08:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -532,11 +532,11 @@ l Networks.aux) )
 Here is how much of TeX's memory you used:
  3874 strings out of 495028
  52831 string characters out of 6181497
- 93034 words of memory out of 5000000
+ 94034 words of memory out of 5000000
  7019 multiletter control sequences out of 15000+600000
  211608 words of font info for 258 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
- 33i,8n,25p,1230b,365s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 33i,8n,25p,1399b,365s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</u
 sr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-d
@@ -544,7 +544,7 @@ ist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
 utmri8a.pfb>
 Output written on "Multi-view Scene Image Inpainting Based on Conditional Gener
-ative Adversarial Networks.pdf" (1 page, 56217 bytes).
+ative Adversarial Networks.pdf" (1 page, 56350 bytes).
 PDF statistics:
  29 PDF objects out of 1000 (max. 8388607)
  20 compressed objects within 1 object stream
