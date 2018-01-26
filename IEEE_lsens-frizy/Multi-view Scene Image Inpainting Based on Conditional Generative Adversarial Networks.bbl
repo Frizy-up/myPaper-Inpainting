@@ -54,4 +54,9 @@ T.~K. Shih and R.-C. Chang, ``Digital inpainting - survey and multilayer image
   inpainting algorithms,'' in \emph{Proc. Third Int. Conf. Information
   Technology and Applications (ICITA'05)}, vol.~1, Jul. 2005, pp. 15--24 vol.1.
 
+\bibitem{Geiger2012::Are}
+A.~Geiger, P.~Lenz, and R.~Urtasun, ``Are we ready for autonomous driving? the
+  kitti vision benchmark suite,'' in \emph{Proc. IEEE Conf. Computer Vision and
+  Pattern Recognition}, Jun. 2012, pp. 3354--3361.
+
 \end{thebibliography}
