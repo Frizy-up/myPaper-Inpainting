@@ -106,11 +106,11 @@
 \usepackage[noadjust]{cite}
 % cite.sty was written by Donald Arseneau
 % V1.6 and later of IEEEtran pre-defines the format of the cite.sty package
-% \cite{} output to follow that of the IEEE. Loading the cite package will
+%  \cite{} output to follow that of the IEEE. Loading the cite package will
 % result in citation numbers being automatically sorted and properly
 % "compressed/ranged". e.g., [1], [9], [2], [7], [5], [6] without using
 % cite.sty will become [1], [2], [5]--[7], [9] using cite.sty. cite.sty's
-% \cite will automatically add leading space, if needed. Use cite.sty's
+%  \cite will automatically add leading space, if needed. Use cite.sty's
 % noadjust option (cite.sty V3.8 and later) if you want to turn this off
 % such as if a citation ever needs to be enclosed in parenthesis.
 % cite.sty is already installed on most LaTeX systems. Be sure and use
@@ -440,17 +440,17 @@ See \url{http://www.ieee.org/publications\_standards/publications/rights/index.h
 
 \section{Introduction}
 
-Image inpainting means to restore the defective image according to the image texture, structure and other information. It has been broad applied in many field, such as defect images restoration\cite{Efros1999::Texture,Lu2010::Novel}, video communication error repairing\cite{Rane2002::Wavelet,Rane2003:IToIP:Structure} and photo editing\cite{Bertalmio2000::Image,Shih2005::Digital}. With the development of image and video processing technology, visual information has played a key role in the field  of automation. Due to the limited information available from monocular cameras, the multi-views system is widely used. Fig \ref{fig:VehicleWithFourCameras} 
+Image inpainting means to restore the defective image according to the image texture, structure and other information. It has been broad applied in many field, such as defect images restoration  \cite{Efros1999::Texture,Lu2010::Novel}, video communication error repairing \cite{Rane2002::Wavelet,Rane2003:IToIP:Structure} and photo editing \cite{Bertalmio2000::Image,Shih2005::Digital}. With the development of image and video processing technology, visual information has played a key role in the field  of automation. Due to the limited information available from monocular cameras, the multi-views system is widely used. Fig \ref{fig:VehicleWithFourCameras} 
 \begin{figure*}[!t]
 \centering
 \includegraphics[width=6.0in]{self_driver_top_view}
 \caption{A vehicle equipped with four cameras(Cam0\texttildelow Cam3).}
 \label{fig:VehicleWithFourCameras}
 \end{figure*}
-show a typical multi-views system---a vehicle equipped with four cameras to detection objects\cite{Geiger2012::Are}. Some reasons easily cause abnormal images. First, the camera lens were blocked by rain, snow or mosquitoes; Second, losing some information in the process of image signal compression, transmission and decompression. When the autonomous vehicles are running and these unexpected things happened, would lead to traffic accidents. In order to automatically restore the abnormal images on driving, we propose a novel image inpainting method based on multi-views. Our method can be used on other multi-views systems.
+show a typical multi-views system---a vehicle equipped with four cameras to detection objects \cite{Geiger2012::Are}. Some reasons easily cause abnormal images. First, the camera lens were blocked by rain, snow or mosquitoes; Second, losing some information in the process of image signal compression, transmission and decompression. When the autonomous vehicles are running and these unexpected things happened, would lead to traffic accidents. In order to automatically restore the abnormal images on driving, we propose a novel image inpainting method based on multi-views. Our method can be used on other multi-views systems.
 
 \IEEEpubidadjcol
-Image inpainting has made tremendous progress in the past nearly two decades. Many methods has been proposed which can be divided into two sets. The first set of approaches relies on texture synthesis techniques, which fills in the hole by extending the textures of the surrounding area\cite{Efros1999::Texture,Drori2003::Fragment,Wilczkowiak2005::Hole,Barnes2009:AToG:PatchMatch:}. What these techniques have in common is the use of patches with similar textures to synthesize the content of the hole region from coarse to fine. Drori et al.\cite{Drori2003::Fragment} and Wilczkowiak et al.\cite{Wilczkowiak2005::Hole} introduced multiple scales and orientations to find better matching patches. Barnes et al.\cite{Barnes2009:AToG:PatchMatch:} used the fast approximate nearest neighbor algorithm to search the match patches. Such methods are good at propagating high-frequency texture details. When part ot the object is missing, using these methods can perfect restore, but it's hard to use these methods to reproduce the small object when the whole object is missing. Fig \ref{fig:methods_compare:patchMatch} show the result using Barnes et al.\cite{Barnes2009:AToG:PatchMatch:} method to restore the defective image (Fig \ref{fig:methods_compare:input}). Compare the result with the target (Fig \ref{fig:methods_compare:target}), 
+Image inpainting has made tremendous progress in the past nearly two decades. Many methods has been proposed which can be divided into two sets. The first set of approaches relies on texture synthesis techniques, which fills in the hole by extending the textures of the surrounding area \cite{Efros1999::Texture,Drori2003::Fragment,Wilczkowiak2005::Hole,Barnes2009:AToG:PatchMatch:}. What these techniques have in common is the use of patches with similar textures to synthesize the content of the hole region from coarse to fine. Drori et al. \cite{Drori2003::Fragment} and Wilczkowiak et al. \cite{Wilczkowiak2005::Hole} introduced multiple scales and orientations to find better matching patches. Barnes et al. \cite{Barnes2009:AToG:PatchMatch:} used the fast approximate nearest neighbor algorithm to search the match patches. Such methods are good at propagating high-frequency texture details. When part ot the object is missing, using these methods can perfect restore, but it's hard to use these methods to reproduce the small object when the whole object is missing. Fig \ref{fig:methods_compare:patchMatch} show the result using Barnes et al. \cite{Barnes2009:AToG:PatchMatch:} method to restore the defective image (Fig \ref{fig:methods_compare:input}). Compare the result with the target (Fig \ref{fig:methods_compare:target}), 
 \begin{figure}[!t]
 \centering
 \subfloat[]{\includegraphics[width=1.0in]{image-introduction-methodsCompare/3-left-image_00000615_0-inputs.png}%
@@ -473,10 +473,12 @@ Image inpainting has made tremendous progress in the past nearly two decades. Ma
 \caption{Qualitative illustration of the different image inpainting methods. (a) Given an image with a missing region captured by left camera. (b) Given the same scene image captured by right camera. (c) The target of the left image inpainting. (d) PatchMatch method result. (e) Image-to-Image method result. (f) Our method result. }
 \label{fig:methods_compare:introduction}
 \end{figure}
-we can find part of the black coat is restore and some small pedestrians fall in the blank region is not reproduce. The second set of approaches solve this problem in a data-driven way\cite{Hays2007::Scene}, involving a cut-paste formulation using nearest neighbors from a dataset of millions of images. This approach is very effective when it finds an example image with sufficient visual similarity to the query but could fail when the query image is not well represented in the database. A serious problem is that the image restored with this method seems reasonable, but the image content is quite different from the target image. Furthermore, it is struggles to fill arbitrary holes, e.g. objects are partially missing. Additionally, the data-driven way restricts application scenarios.
+we can find part of the black coat is restore and some small pedestrians fall in the blank region is not reproduce. The second set of approaches solve this problem in a data-driven way \cite{Hays2007::Scene}, involving a cut-paste formulation using nearest neighbors from a dataset of millions of images. This approach is very effective when it finds an example image with sufficient visual similarity to the query but could fail when the query image is not well represented in the database. A serious problem is that the image restored with this method seems reasonable, but the image content is quite different from the target image. Furthermore, it is struggles to fill arbitrary holes, e.g. objects are partially missing. Additionally, the data-driven way restricts application scenarios.
 
 \IEEEpubidadjcol
-With the continuous updating and development of convolutional neural network, various tasks of computer vision have been breakthrough. Image inpainting technology has also been improved. Pathak et al.\cite{Pathak2016::Context}
+With the continuous updating and development of convolutional neural network, various tasks of computer vision have been breakthrough. Image inpainting technology has also been improved. Autoencoders \cite{Hinton2006:s:Reducing,Bengio:Co:Learning} encode image to a low-dimensional "bottleneck", decode it by reconstructing the high-dimensional image from the "bottleneck". The purpose of doing this to obtain the compact feature representation of the scene. Denoising autoencoders \cite{Vincent2008::Extracting} reconstruct the image from corrupted status to learn more robust features. Using  denoising autoencoders to inpaint defective image can get blurred image. 
+
+Pathak et al. \cite{Pathak2016::Context}
 
 This demo file is intended to serve as a ``starter file''
 for \textit{IEEE Sensors Letters} papers produced under \LaTeX\ 

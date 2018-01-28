@@ -79,4 +79,24 @@ J.~Hays and A.~A. Efros, ``Scene completion using millions of photographs,'' in
   \emph{ACM Transactions on Graphics (TOG)}, vol.~26, no.~3.\hskip 1em plus
   0.5em minus 0.4em\relax ACM, 2007, p.~4.
 
+\bibitem{Hinton2006:s:Reducing}
+G.~E. Hinton and R.~R. Salakhutdinov, ``Reducing the dimensionality of data
+  with neural networks,'' \emph{science}, vol. 313, no. 5786, pp. 504--507,
+  2006.
+
+\bibitem{Bengio:Co:Learning}
+Y.~Bengio, ``Learning deep architectures for ai. foundations and trends r in
+  machine learning, 2 (1): 1--127, 2009,'' \emph{Cited on}, p.~39.
+
+\bibitem{Vincent2008::Extracting}
+P.~Vincent, H.~Larochelle, Y.~Bengio, and P.-A. Manzagol, ``Extracting and
+  composing robust features with denoising autoencoders,'' in \emph{Proceedings
+  of the 25th international conference on Machine learning}.\hskip 1em plus
+  0.5em minus 0.4em\relax ACM, 2008, pp. 1096--1103.
+
+\bibitem{Pathak2016::Context}
+D.~Pathak, P.~Krahenbuhl, J.~Donahue, T.~Darrell, and A.~A. Efros, ``Context
+  encoders: Feature learning by inpainting,'' in \emph{Proceedings of the IEEE
+  Conference on Computer Vision and Pattern Recognition}, 2016, pp. 2536--2544.
+
 \end{thebibliography}
