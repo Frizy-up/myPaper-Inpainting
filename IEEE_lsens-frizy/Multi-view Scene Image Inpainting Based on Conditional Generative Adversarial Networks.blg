@@ -14,45 +14,45 @@ Warning--I didn't find a database entry for "IEEEhowto:kopka"
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 7 entries,
+You've used 10 entries,
             4039 wiz_defined-function locations,
-            863 strings with 9013 characters,
-and the built_in function-call counts, 7355 in all, are:
-= -- 555
-> -- 168
-< -- 89
-+ -- 87
-- -- 21
-* -- 378
-:= -- 1000
-add.period$ -- 15
-call.type$ -- 7
-change.case$ -- 7
-chr.to.int$ -- 231
-cite$ -- 7
-duplicate$ -- 470
-empty$ -- 601
-format.name$ -- 28
-if$ -- 1721
+            884 strings with 9649 characters,
+and the built_in function-call counts, 9533 in all, are:
+= -- 729
+> -- 223
+< -- 103
++ -- 115
+- -- 32
+* -- 486
+:= -- 1331
+add.period$ -- 22
+call.type$ -- 10
+change.case$ -- 10
+chr.to.int$ -- 255
+cite$ -- 10
+duplicate$ -- 637
+empty$ -- 793
+format.name$ -- 42
+if$ -- 2228
 int.to.chr$ -- 0
-int.to.str$ -- 7
-missing$ -- 76
-newline$ -- 44
-num.names$ -- 7
-pop$ -- 190
+int.to.str$ -- 10
+missing$ -- 109
+newline$ -- 53
+num.names$ -- 10
+pop$ -- 265
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 538
+skip$ -- 710
 stack$ -- 0
-substring$ -- 520
-swap$ -- 429
-text.length$ -- 12
+substring$ -- 583
+swap$ -- 557
+text.length$ -- 18
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 7
+type$ -- 10
 warning$ -- 0
-while$ -- 34
-width$ -- 8
-write$ -- 90
+while$ -- 42
+width$ -- 12
+write$ -- 120
 (There was 1 warning)
