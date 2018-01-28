@@ -476,19 +476,8 @@ Image inpainting has made tremendous progress in the past nearly two decades. Ma
 we can find part of the black coat is restore and some small pedestrians fall in the blank region is not reproduce. The second set of approaches solve this problem in a data-driven way \cite{Hays2007::Scene}, involving a cut-paste formulation using nearest neighbors from a dataset of millions of images. This approach is very effective when it finds an example image with sufficient visual similarity to the query but could fail when the query image is not well represented in the database. A serious problem is that the image restored with this method seems reasonable, but the image content is quite different from the target image. Furthermore, it is struggles to fill arbitrary holes, e.g. objects are partially missing. Additionally, the data-driven way restricts application scenarios.
 
 \IEEEpubidadjcol
-With the continuous updating and development of convolutional neural network, various tasks of computer vision have been breakthrough. Image inpainting technology has also been improved. Autoencoders \cite{Hinton2006:s:Reducing,Bengio:Co:Learning} encode image to a low-dimensional "bottleneck", decode it by reconstructing the high-dimensional image from the "bottleneck". The purpose of doing this to obtain the compact feature representation of the scene. Denoising autoencoders \cite{Vincent2008::Extracting} reconstruct the image from corrupted status to learn more robust features. Using  denoising autoencoders to inpaint defective image can get blurred image. 
-
-Pathak et al. \cite{Pathak2016::Context}
-
-This demo file is intended to serve as a ``starter file''
-for \textit{IEEE Sensors Letters} papers produced under \LaTeX\ 
-\cite{IEEEhowto:kopka} using IEEE\_lsens.cls version 1.0 and later.
-
-I wish you the best of success.
-
-\hfill mds
- 
-\hfill July 12, 2017
+With the continuous updating and development of convolutional neural network, various tasks of computer vision have been breakthrough. Image inpainting technology has also been improved. Autoencoders \cite{Hinton2006:s:Reducing,Bengio:Co:Learning} encode image to a low-dimensional "bottleneck", decode it by reconstructing the high-dimensional image from the "bottleneck". The purpose of doing this to obtain the compact feature representation of the scene. Denoising autoencoders \cite{Vincent2008::Extracting} reconstruct the image from corrupted status to learn more robust features. Using  denoising autoencoders to inpaint defective image can get blurred filling in the blank area. Generative adversarial nets \cite{Goodfellow2014::Generative} (GAN) can learn the distribution of real data, using GAN can generate images that correspond to train data \cite{Radford2016::Unsupervised}. Pathak et al. \cite{Pathak2016::Context} combined autoencoders and GAN for image inpainting. They used autoencoders as the generator in GAN architecture, combining autoencoders reconstruct loss and GAN adversarial loss to do image inpainting get sharpness results. Li et al. \cite{Li2017::Generative} used the same idea to do face completion. Mirza et al. \cite{Mirza2014:CS:Conditional} introduced a condition into GAN to 
+control the processes, which can generate a special image according to the condition. Isola et al. \cite{Isola2017::Image} further developed the idea of Pathak. Generator adopt the autoencoders with skip connection from encoder to decoder, like the UNet \cite{Ronneberger2015::U} structure. Discriminator added input image as condition, learned to classify between fake (input image,inpainting result) and real (input image, target image) tuples. 
 
 \subsection{Subsection Heading Here}
 Subsection text here.

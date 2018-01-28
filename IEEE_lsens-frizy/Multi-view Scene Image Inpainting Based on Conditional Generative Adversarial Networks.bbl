@@ -94,9 +94,40 @@ P.~Vincent, H.~Larochelle, Y.~Bengio, and P.-A. Manzagol, ``Extracting and
   of the 25th international conference on Machine learning}.\hskip 1em plus
   0.5em minus 0.4em\relax ACM, 2008, pp. 1096--1103.
 
+\bibitem{Goodfellow2014::Generative}
+I.~Goodfellow, J.~Pouget-Abadie, M.~Mirza, B.~Xu, D.~Warde-Farley, S.~Ozair,
+  A.~Courville, and Y.~Bengio, ``Generative adversarial nets,'' in
+  \emph{Advances in neural information processing systems}, 2014, pp.
+  2672--2680.
+
+\bibitem{Radford2016::Unsupervised}
+A.~Radford, L.~Metz, and S.~Chintala, ``Unsupervised representation learning
+  with deep convolutional generative adversarial networks,'' in \emph{ICLR},
+  2016.
+
 \bibitem{Pathak2016::Context}
 D.~Pathak, P.~Krahenbuhl, J.~Donahue, T.~Darrell, and A.~A. Efros, ``Context
   encoders: Feature learning by inpainting,'' in \emph{Proceedings of the IEEE
   Conference on Computer Vision and Pattern Recognition}, 2016, pp. 2536--2544.
+
+\bibitem{Li2017::Generative}
+Y.~Li, S.~Liu, J.~Yang, and M.-H. Yang, ``Generative face completion,'' in
+  \emph{Proceedings of the IEEE Conference on Computer Vision and Pattern
+  Recognition}, vol.~1, no.~3, 2017, p.~6.
+
+\bibitem{Mirza2014:CS:Conditional}
+M.~Mirza and S.~Osindero, ``Conditional generative adversarial nets,''
+  \emph{Computer Science}, pp. 2672--2680, 2014.
+
+\bibitem{Isola2017::Image}
+P.~Isola, J.-Y. Zhu, T.~Zhou, and A.~A. Efros, ``Image-to-image translation
+  with conditional adversarial networks,'' in \emph{Proceedings of the IEEE
+  Conference on Computer Vision and Pattern Recognition}, 2017, pp. 1125--1134.
+
+\bibitem{Ronneberger2015::U}
+O.~Ronneberger, P.~Fischer, and T.~Brox, ``U-net convolutional networks for
+  biomedical image segmentation,'' in \emph{International Conference on Medical
+  image computing and computer-assisted intervention}.\hskip 1em plus 0.5em
+  minus 0.4em\relax Springer, 2015, pp. 234--241.
 
 \end{thebibliography}
