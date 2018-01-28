@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.1.21)  28 JAN 2018 07:50
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.1.21)  28 JAN 2018 10:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -668,7 +668,7 @@ hic file (type png)
 
 <use image-introduction-methodsCompare/3-left-image_00000615_0-inputs.png>
 Package pdftex.def Info: image-introduction-methodsCompare/3-left-image_0000061
-5_0-inputs.png used on input line 456.
+5_0-inputs.png used on input line 457.
 (pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
 
 <image-introduction-methodsCompare/3-left-image_00000615_0-conditions.png, id=3
@@ -678,7 +678,7 @@ Graphic file (type png)
 
 <use image-introduction-methodsCompare/3-left-image_00000615_0-conditions.png>
 Package pdftex.def Info: image-introduction-methodsCompare/3-left-image_0000061
-5_0-conditions.png used on input line 459.
+5_0-conditions.png used on input line 460.
 (pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
 
 <image-introduction-methodsCompare/3-left-image_00000615_0-targets.png, id=4, 2
@@ -688,7 +688,7 @@ phic file (type png)
 
 <use image-introduction-methodsCompare/3-left-image_00000615_0-targets.png>
 Package pdftex.def Info: image-introduction-methodsCompare/3-left-image_0000061
-5_0-targets.png used on input line 462.
+5_0-targets.png used on input line 463.
 (pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
 
 <image-introduction-methodsCompare/3-left-image_00000615_0-patchMatch_output.pn
@@ -699,7 +699,7 @@ ut.png Graphic file (type png)
 <use image-introduction-methodsCompare/3-left-image_00000615_0-patchMatch_outpu
 t.png>
 Package pdftex.def Info: image-introduction-methodsCompare/3-left-image_0000061
-5_0-patchMatch_output.png used on input line 465.
+5_0-patchMatch_output.png used on input line 466.
 (pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
 
 <image-introduction-methodsCompare/3-left-image_00000615_0-noMultiViews_outputs
@@ -710,7 +710,7 @@ tputs.png Graphic file (type png)
 <use image-introduction-methodsCompare/3-left-image_00000615_0-noMultiViews_out
 puts.png>
 Package pdftex.def Info: image-introduction-methodsCompare/3-left-image_0000061
-5_0-noMultiViews_outputs.png used on input line 468.
+5_0-noMultiViews_outputs.png used on input line 469.
 (pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
 
 <image-introduction-methodsCompare/3-left-image_00000615_0-our_outputs.png, id=
@@ -720,33 +720,34 @@ File: image-introduction-methodsCompare/3-left-image_00000615_0-our_outputs.png
 
 <use image-introduction-methodsCompare/3-left-image_00000615_0-our_outputs.png>
 Package pdftex.def Info: image-introduction-methodsCompare/3-left-image_0000061
-5_0-our_outputs.png used on input line 471.
+5_0-our_outputs.png used on input line 472.
 (pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./image-introduction-methodsCompare/3-left-image_00000615_0-inputs.png (PNG c
-opy)> <./image-introduction-methodsCompare/3-left-image_00000615_0-conditions.p
-ng (PNG copy)> <./image-introduction-methodsCompare/3-left-image_00000615_0-tar
-gets.png (PNG copy)> <./image-introduction-methodsCompare/3-left-image_00000615
-_0-patchMatch_output.png (PNG copy)> <./image-introduction-methodsCompare/3-lef
-t-image_00000615_0-noMultiViews_outputs.png (PNG copy)> <./image-introduction-m
-ethodsCompare/3-left-image_00000615_0-our_outputs.png (PNG copy)>]
+]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.03749> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 485.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 491.
 
 (./Multi-view Scene Image Inpainting Based on Conditional Generative Adversaria
-l Networks.bbl) [2 <./self_driver_top_view-eps-converted-to.pdf>]
+l Networks.bbl) [2 <./self_driver_top_view-eps-converted-to.pdf> <./image-intro
+duction-methodsCompare/3-left-image_00000615_0-inputs.png (PNG copy)> <./image-
+introduction-methodsCompare/3-left-image_00000615_0-conditions.png (PNG copy)> 
+<./image-introduction-methodsCompare/3-left-image_00000615_0-targets.png (PNG c
+opy)> <./image-introduction-methodsCompare/3-left-image_00000615_0-patchMatch_o
+utput.png (PNG copy)> <./image-introduction-methodsCompare/3-left-image_0000061
+5_0-noMultiViews_outputs.png (PNG copy)> <./image-introduction-methodsCompare/3
+-left-image_00000615_0-our_outputs.png (PNG copy)>]
 (./Multi-view Scene Image Inpainting Based on Conditional Generative Adversaria
 l Networks.aux) ) 
 Here is how much of TeX's memory you used:
- 5909 strings out of 495028
- 87699 string characters out of 6181497
- 136222 words of memory out of 5000000
- 8976 multiletter control sequences out of 15000+600000
+ 5910 strings out of 495028
+ 87716 string characters out of 6181497
+ 138226 words of memory out of 5000000
+ 8977 multiletter control sequences out of 15000+600000
  211921 words of font info for 259 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
- 53i,10n,92p,1467b,429s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,10n,92p,1462b,429s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</u
 sr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-d
@@ -754,7 +755,7 @@ ist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
 utmri8a.pfb>
 Output written on "Multi-view Scene Image Inpainting Based on Conditional Gener
-ative Adversarial Networks.pdf" (2 pages, 733402 bytes).
+ative Adversarial Networks.pdf" (2 pages, 734201 bytes).
 PDF statistics:
  42 PDF objects out of 1000 (max. 8388607)
  24 compressed objects within 1 object stream

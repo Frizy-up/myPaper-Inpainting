@@ -74,4 +74,9 @@ C.~Barnes, E.~Shechtman, A.~Finkelstein, and D.~B. Goldman, ``Patchmatch: A
   randomized correspondence algorithm for structural image editing,'' \emph{ACM
   Transactions on Graphics-TOG}, vol.~28, no.~3, p.~24, 2009.
 
+\bibitem{Hays2007::Scene}
+J.~Hays and A.~A. Efros, ``Scene completion using millions of photographs,'' in
+  \emph{ACM Transactions on Graphics (TOG)}, vol.~26, no.~3.\hskip 1em plus
+  0.5em minus 0.4em\relax ACM, 2007, p.~4.
+
 \end{thebibliography}
