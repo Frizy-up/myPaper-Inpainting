@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.1.21)  28 JAN 2018 06:03
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.1.21)  28 JAN 2018 07:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -645,7 +645,7 @@ Package epstopdf Info: Source file: <self_driver_top_view.eps>
 (epstopdf)                    size: 127237 bytes
 (epstopdf)             Command: <repstopdf --outfile=self_driver_top_view-eps-c
 onverted-to.pdf self_driver_top_view.eps>
-(epstopdf)             \includegraphics on input line 447.
+(epstopdf)             \includegraphics on input line 446.
 Package epstopdf Info: Output file is already uptodate.
 
 <self_driver_top_view-eps-converted-to.pdf, id=1, 923.45pt x 423.5825pt>
@@ -653,9 +653,9 @@ File: self_driver_top_view-eps-converted-to.pdf Graphic file (type pdf)
 
 <use self_driver_top_view-eps-converted-to.pdf>
 Package pdftex.def Info: self_driver_top_view-eps-converted-to.pdf used on inpu
-t line 447.
+t line 446.
 (pdftex.def)             Requested size: 433.62pt x 198.89636pt.
-LaTeX Font Info:    Try loading font information for TS1+phv on input line 448.
+LaTeX Font Info:    Try loading font information for TS1+phv on input line 447.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
@@ -668,56 +668,96 @@ hic file (type png)
 
 <use image-introduction-methodsCompare/3-left-image_00000615_0-inputs.png>
 Package pdftex.def Info: image-introduction-methodsCompare/3-left-image_0000061
-5_0-inputs.png used on input line 458.
-(pdftex.def)             Requested size: 108.405pt x 108.40472pt.
-File: image-introduction-methodsCompare/3-left-image_00000615_0-inputs.png Grap
-hic file (type png)
+5_0-inputs.png used on input line 456.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
 
-<use image-introduction-methodsCompare/3-left-image_00000615_0-inputs.png>
+<image-introduction-methodsCompare/3-left-image_00000615_0-conditions.png, id=3
+, 256.96pt x 256.96pt>
+File: image-introduction-methodsCompare/3-left-image_00000615_0-conditions.png 
+Graphic file (type png)
+
+<use image-introduction-methodsCompare/3-left-image_00000615_0-conditions.png>
 Package pdftex.def Info: image-introduction-methodsCompare/3-left-image_0000061
-5_0-inputs.png used on input line 461.
-(pdftex.def)             Requested size: 108.405pt x 108.40472pt.
-File: image-introduction-methodsCompare/3-left-image_00000615_0-inputs.png Grap
-hic file (type png)
+5_0-conditions.png used on input line 459.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
 
-<use image-introduction-methodsCompare/3-left-image_00000615_0-inputs.png>
+<image-introduction-methodsCompare/3-left-image_00000615_0-targets.png, id=4, 2
+56.96pt x 256.96pt>
+File: image-introduction-methodsCompare/3-left-image_00000615_0-targets.png Gra
+phic file (type png)
+
+<use image-introduction-methodsCompare/3-left-image_00000615_0-targets.png>
 Package pdftex.def Info: image-introduction-methodsCompare/3-left-image_0000061
-5_0-inputs.png used on input line 464.
-(pdftex.def)             Requested size: 108.405pt x 108.40472pt.
+5_0-targets.png used on input line 462.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
 
+<image-introduction-methodsCompare/3-left-image_00000615_0-patchMatch_output.pn
+g, id=5, 256.96pt x 256.96pt>
+File: image-introduction-methodsCompare/3-left-image_00000615_0-patchMatch_outp
+ut.png Graphic file (type png)
+
+<use image-introduction-methodsCompare/3-left-image_00000615_0-patchMatch_outpu
+t.png>
+Package pdftex.def Info: image-introduction-methodsCompare/3-left-image_0000061
+5_0-patchMatch_output.png used on input line 465.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
+
+<image-introduction-methodsCompare/3-left-image_00000615_0-noMultiViews_outputs
+.png, id=6, 256.96pt x 256.96pt>
+File: image-introduction-methodsCompare/3-left-image_00000615_0-noMultiViews_ou
+tputs.png Graphic file (type png)
+
+<use image-introduction-methodsCompare/3-left-image_00000615_0-noMultiViews_out
+puts.png>
+Package pdftex.def Info: image-introduction-methodsCompare/3-left-image_0000061
+5_0-noMultiViews_outputs.png used on input line 468.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
+
+<image-introduction-methodsCompare/3-left-image_00000615_0-our_outputs.png, id=
+7, 256.96pt x 256.96pt>
+File: image-introduction-methodsCompare/3-left-image_00000615_0-our_outputs.png
+ Graphic file (type png)
+
+<use image-introduction-methodsCompare/3-left-image_00000615_0-our_outputs.png>
+Package pdftex.def Info: image-introduction-methodsCompare/3-left-image_0000061
+5_0-our_outputs.png used on input line 471.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
  <./image-introduction-methodsCompare/3-left-image_00000615_0-inputs.png (PNG c
-opy)>]
+opy)> <./image-introduction-methodsCompare/3-left-image_00000615_0-conditions.p
+ng (PNG copy)> <./image-introduction-methodsCompare/3-left-image_00000615_0-tar
+gets.png (PNG copy)> <./image-introduction-methodsCompare/3-left-image_00000615
+_0-patchMatch_output.png (PNG copy)> <./image-introduction-methodsCompare/3-lef
+t-image_00000615_0-noMultiViews_outputs.png (PNG copy)> <./image-introduction-m
+ethodsCompare/3-left-image_00000615_0-our_outputs.png (PNG copy)>]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.03749> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 480.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 485.
 
 (./Multi-view Scene Image Inpainting Based on Conditional Generative Adversaria
 l Networks.bbl) [2 <./self_driver_top_view-eps-converted-to.pdf>]
 (./Multi-view Scene Image Inpainting Based on Conditional Generative Adversaria
 l Networks.aux) ) 
 Here is how much of TeX's memory you used:
- 5891 strings out of 495028
- 85675 string characters out of 6181497
- 135165 words of memory out of 5000000
- 8950 multiletter control sequences out of 15000+600000
- 216653 words of font info for 272 fonts, out of 8000000 for 9000
+ 5909 strings out of 495028
+ 87699 string characters out of 6181497
+ 136222 words of memory out of 5000000
+ 8976 multiletter control sequences out of 15000+600000
+ 211921 words of font info for 259 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
- 53i,10n,92p,1378b,425s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,10n,92p,1467b,429s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</u
-sr/share/texlive/texmf-dist/fonts/type1/public/newtx/rntxmi7.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/newtx/rtxmi7.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/hel
-vetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8
-a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+sr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
+utmri8a.pfb>
 Output written on "Multi-view Scene Image Inpainting Based on Conditional Gener
-ative Adversarial Networks.pdf" (2 pages, 278117 bytes).
+ative Adversarial Networks.pdf" (2 pages, 733402 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
- 33 compressed objects within 1 object stream
+ 42 PDF objects out of 1000 (max. 8388607)
+ 24 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

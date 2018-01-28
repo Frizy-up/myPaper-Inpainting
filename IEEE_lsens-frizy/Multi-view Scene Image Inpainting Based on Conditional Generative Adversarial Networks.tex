@@ -438,7 +438,6 @@ See \url{http://www.ieee.org/publications\_standards/publications/rights/index.h
 % make the title area
 \maketitle
 
-
 \section{Introduction}
 
 Image inpainting means to restore the defective image according to the image texture, structure and other information. It has been broad applied in many field, such as defect images restoration\cite{Efros1999::Texture,Lu2010::Novel}, video communication error repairing\cite{Rane2002::Wavelet,Rane2003:IToIP:Structure} and photo editing\cite{Bertalmio2000::Image,Shih2005::Digital}. With the development of image and video processing technology, visual information has played a key role in the field  of automation. Due to the limited information available from monocular cameras, the multi-views system is widely used. Fig \ref{fig:VehicleWithFourCameras} 
@@ -450,23 +449,29 @@ Image inpainting means to restore the defective image according to the image tex
 \end{figure*}
 show a typical multi-views system --- a vehicle equipped with four cameras to detection objects\cite{Geiger2012::Are}. Some reasons easily cause abnormal images. First, the camera lens were blocked by rain, snow or mosquitoes; Second, losing some information in the process of image signal compression, transmission and decompression. When the autonomous vehicles are running and these unexpected things happened, would lead to traffic accidents. In order to automatically restore the abnormal images on driving, we propose a novel image inpainting method based on multi-views. Our method can be used on other multi-views systems.
 
-Image inpainting has made tremendous progress in the past nearly two decades. Many methods has been proposed which can be divided into two groups. The first set of approaches relies on texture synthesis techniques, which fills in the hole by extending the textures of the surrounding area\cite{Efros1999::Texture,Drori2003::Fragment,Wilczkowiak2005::Hole,Barnes2009:AToG:PatchMatch:}. What these techniques have in common is the use of patches with similar textures to synthesize the content of the hole region from coarse to fine. Drori et al.\cite{Drori2003::Fragment} and Wilczkowiak et al.\cite{Wilczkowiak2005::Hole} introduced multiple scales and orientations to find better matching patches. Barnes et al.\cite{Barnes2009:AToG:PatchMatch:} used the fast approximate nearest neighbor algorithm to search the match patches. 
-
+Image inpainting has made tremendous progress in the past nearly two decades. Many methods has been proposed which can be divided into two groups. The first set of approaches relies on texture synthesis techniques, which fills in the hole by extending the textures of the surrounding area\cite{Efros1999::Texture,Drori2003::Fragment,Wilczkowiak2005::Hole,Barnes2009:AToG:PatchMatch:}. What these techniques have in common is the use of patches with similar textures to synthesize the content of the hole region from coarse to fine. Drori et al.\cite{Drori2003::Fragment} and Wilczkowiak et al.\cite{Wilczkowiak2005::Hole} introduced multiple scales and orientations to find better matching patches. Barnes et al.\cite{Barnes2009:AToG:PatchMatch:} used the fast approximate nearest neighbor algorithm to search the match patches. Such methods are good at propagating high-frequency texture details. When part ot the object is missing, using these methods can perfect restore, but it's hard to use these methods to reproduce the small object when the whole object is missing. Fig \ref{fig:methods_compare:patchMatch} show the result using Barnes et al.\cite{Barnes2009:AToG:PatchMatch:} method to restore the defective image (Fig \ref{fig:methods_compare:input}). Compare the result with the target (Fig \ref{fig:methods_compare:target}), we 
 \begin{figure}[!t]
 \centering
-\subfloat[]{\includegraphics[width=1.5in]{image-introduction-methodsCompare/3-left-image_00000615_0-inputs.png}%
-\label{fig_lossrate_a}}
+\subfloat[]{\includegraphics[width=1.0in]{image-introduction-methodsCompare/3-left-image_00000615_0-inputs.png}%
+\label{fig:methods_compare:input}}
 \hfil
-\subfloat[]{\includegraphics[width=1.5in]{image-introduction-methodsCompare/3-left-image_00000615_0-inputs.png}%
-\label{fig_lossrate_b}}
+\subfloat[]{\includegraphics[width=1.0in]{image-introduction-methodsCompare/3-left-image_00000615_0-conditions.png}%
+\label{fig:methods_compare:condition}}
 \hfil
-\subfloat[]{\includegraphics[width=1.5in]{image-introduction-methodsCompare/3-left-image_00000615_0-inputs.png}%
-\label{fig_lossrate_c}}
-\caption{Measured and actual loss rates for each stage. (a) $p=0.30$. (b) $p=0.60$.}
-\label{fig_lossrate}
+\subfloat[]{\includegraphics[width=1.0in]{image-introduction-methodsCompare/3-left-image_00000615_0-targets.png}%
+\label{fig:methods_compare:target}}
+\vfil
+\subfloat[]{\includegraphics[width=1.0in]{image-introduction-methodsCompare/3-left-image_00000615_0-patchMatch_output.png}%
+\label{fig:methods_compare:patchMatch}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{image-introduction-methodsCompare/3-left-image_00000615_0-noMultiViews_outputs.png}%
+\label{fig:methods_compare:Image2Image}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{image-introduction-methodsCompare/3-left-image_00000615_0-our_outputs.png}%
+\label{fig:methods_compare:ourMethod}}
+\caption{Qualitative illustration of the different image inpainting methods. (a) Given an image with a missing region captured by left camera. (b) Given the same scene image captured by right camera. (c) The target of the left image inpainting. (d) PatchMatch method result. (e) Image-to-Image method result. (f) Our method result. }
+\label{fig:methods_compare:introduction}
 \end{figure}
-
-
 This demo file is intended to serve as a ``starter file''
 for \textit{IEEE Sensors Letters} papers produced under \LaTeX\ 
 \cite{IEEEhowto:kopka} using IEEE\_lsens.cls version 1.0 and later.
