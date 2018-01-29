@@ -151,4 +151,9 @@ X.~Zhang, X.~Zhou, M.~Lin, and J.~Sun, ``Shufflenet an extremely efficient
   convolutional neural network for mobile devices,'' \emph{arXiv preprint
   arXiv1707.01083}, 2017.
 
+\bibitem{Ess2008::mobile}
+A.~Ess, B.~Leibe, K.~Schindler, and L.~V. Gool, ``A mobile vision system for
+  robust multi-person tracking,'' in \emph{Proc. IEEE Conf. Computer Vision and
+  Pattern Recognition}, Jun. 2008, pp. 1--8.
+
 \end{thebibliography}
