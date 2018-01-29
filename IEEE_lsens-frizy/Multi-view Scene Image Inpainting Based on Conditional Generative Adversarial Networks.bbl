@@ -130,4 +130,9 @@ O.~Ronneberger, P.~Fischer, and T.~Brox, ``U-net convolutional networks for
   image computing and computer-assisted intervention}.\hskip 1em plus 0.5em
   minus 0.4em\relax Springer, 2015, pp. 234--241.
 
+\bibitem{Li2016::Precomputed}
+C.~Li and M.~Wand, ``Precomputed real-time texture synthesis with markovian
+  generative adversarial networks,'' in \emph{European Conference on Computer
+  Vision}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2016, pp. 702--716.
+
 \end{thebibliography}
