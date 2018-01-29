@@ -135,4 +135,20 @@ C.~Li and M.~Wand, ``Precomputed real-time texture synthesis with markovian
   generative adversarial networks,'' in \emph{European Conference on Computer
   Vision}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2016, pp. 702--716.
 
+\bibitem{Jaderberg2015::Spatial}
+M.~Jaderberg, K.~Simonyan, A.~Zisserman \emph{et~al.}, ``Spatial transformer
+  networks,'' in \emph{Advances in neural information processing systems},
+  2015, pp. 2017--2025.
+
+\bibitem{Howard2017:apa:Mobilenets}
+A.~G. Howard, M.~Zhu, B.~Chen, D.~Kalenichenko, W.~Wang, T.~Weyand,
+  M.~Andreetto, and H.~Adam, ``Mobilenets efficient convolutional neural
+  networks for mobile vision applications,'' \emph{arXiv preprint
+  arXiv1704.04861}, 2017.
+
+\bibitem{Zhang2017:apa:Shufflenet}
+X.~Zhang, X.~Zhou, M.~Lin, and J.~Sun, ``Shufflenet an extremely efficient
+  convolutional neural network for mobile devices,'' \emph{arXiv preprint
+  arXiv1707.01083}, 2017.
+
 \end{thebibliography}

@@ -14,45 +14,45 @@ Database file #1: /mnt/hgfs/Downloads/refer-frizy/refer-frizy.bib
 Warning--empty year in Bengio:Co:Learning
 
 Done.
-You've used 22 entries,
+You've used 25 entries,
             4039 wiz_defined-function locations,
-            961 strings with 12088 characters,
-and the built_in function-call counts, 19619 in all, are:
-= -- 1514
-> -- 467
-< -- 193
-+ -- 253
-- -- 72
-* -- 961
-:= -- 2733
-add.period$ -- 50
-call.type$ -- 22
-change.case$ -- 22
-chr.to.int$ -- 474
-cite$ -- 23
-duplicate$ -- 1356
-empty$ -- 1671
-format.name$ -- 93
-if$ -- 4614
+            976 strings with 12766 characters,
+and the built_in function-call counts, 21701 in all, are:
+= -- 1664
+> -- 543
+< -- 204
++ -- 293
+- -- 88
+* -- 1058
+:= -- 3033
+add.period$ -- 56
+call.type$ -- 25
+change.case$ -- 25
+chr.to.int$ -- 504
+cite$ -- 26
+duplicate$ -- 1513
+empty$ -- 1849
+format.name$ -- 112
+if$ -- 5094
 int.to.chr$ -- 0
-int.to.str$ -- 22
-missing$ -- 232
-newline$ -- 89
-num.names$ -- 22
-pop$ -- 569
+int.to.str$ -- 25
+missing$ -- 263
+newline$ -- 98
+num.names$ -- 25
+pop$ -- 655
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1503
+skip$ -- 1659
 stack$ -- 0
-substring$ -- 1114
-swap$ -- 1140
-text.length$ -- 35
+substring$ -- 1187
+swap$ -- 1253
+text.length$ -- 36
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 22
+type$ -- 25
 warning$ -- 1
-while$ -- 88
-width$ -- 24
-write$ -- 232
+while$ -- 95
+width$ -- 27
+write$ -- 257
 (There was 1 warning)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.1.21)  28 JAN 2018 16:46
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.1.21)  29 JAN 2018 07:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -730,7 +730,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.03749> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 484.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 486.
 
 (./Multi-view Scene Image Inpainting Based on Conditional Generative Adversaria
 l Networks.bbl [2 <./self_driver_top_view-eps-converted-to.pdf> <./image-introd
@@ -740,16 +740,14 @@ ntroduction-methodsCompare/3-left-image_00000615_0-conditions.png (PNG copy)> <
 py)> <./image-introduction-methodsCompare/3-left-image_00000615_0-patchMatch_ou
 tput.png (PNG copy)> <./image-introduction-methodsCompare/3-left-image_00000615
 _0-noMultiViews_outputs.png (PNG copy)> <./image-introduction-methodsCompare/3-
-left-image_00000615_0-our_outputs.png (PNG copy)>]) [3
-
-]
+left-image_00000615_0-our_outputs.png (PNG copy)>]) [3]
 (./Multi-view Scene Image Inpainting Based on Conditional Generative Adversaria
 l Networks.aux) ) 
 Here is how much of TeX's memory you used:
- 5920 strings out of 495028
- 87959 string characters out of 6181497
- 141270 words of memory out of 5000000
- 8988 multiletter control sequences out of 15000+600000
+ 5923 strings out of 495028
+ 88036 string characters out of 6181497
+ 141282 words of memory out of 5000000
+ 8991 multiletter control sequences out of 15000+600000
  210843 words of font info for 258 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
  53i,10n,92p,1467b,429s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -760,7 +758,7 @@ ist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
 utmri8a.pfb>
 Output written on "Multi-view Scene Image Inpainting Based on Conditional Gener
-ative Adversarial Networks.pdf" (3 pages, 738455 bytes).
+ative Adversarial Networks.pdf" (3 pages, 739751 bytes).
 PDF statistics:
  45 PDF objects out of 1000 (max. 8388607)
  26 compressed objects within 1 object stream
