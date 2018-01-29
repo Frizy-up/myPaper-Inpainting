@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.1.21)  28 JAN 2018 15:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.1.21)  28 JAN 2018 16:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -730,7 +730,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.03749> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 483.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 484.
 
 (./Multi-view Scene Image Inpainting Based on Conditional Generative Adversaria
 l Networks.bbl [2 <./self_driver_top_view-eps-converted-to.pdf> <./image-introd
@@ -760,7 +760,7 @@ ist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
 utmri8a.pfb>
 Output written on "Multi-view Scene Image Inpainting Based on Conditional Gener
-ative Adversarial Networks.pdf" (3 pages, 737571 bytes).
+ative Adversarial Networks.pdf" (3 pages, 738455 bytes).
 PDF statistics:
  45 PDF objects out of 1000 (max. 8388607)
  26 compressed objects within 1 object stream
