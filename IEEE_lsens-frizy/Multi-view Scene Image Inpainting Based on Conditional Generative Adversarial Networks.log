@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.1.21)  29 JAN 2018 07:08
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.1.21)  29 JAN 2018 11:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -729,25 +729,33 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
+<networkStruct.png, id=17, 1605.5985pt x 1064.17575pt>
+File: networkStruct.png Graphic file (type png)
+ <use networkStruct.png>
+Package pdftex.def Info: networkStruct.png used on input line 489.
+(pdftex.def)             Requested size: 469.75499pt x 311.34729pt.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.03749> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 486.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 495.
 
+[2 <./self_driver_top_view-eps-converted-to.pdf> <./image-introduction-methodsC
+ompare/3-left-image_00000615_0-inputs.png (PNG copy)> <./image-introduction-met
+hodsCompare/3-left-image_00000615_0-conditions.png (PNG copy)> <./image-introdu
+ction-methodsCompare/3-left-image_00000615_0-targets.png (PNG copy)> <./image-i
+ntroduction-methodsCompare/3-left-image_00000615_0-patchMatch_output.png (PNG c
+opy)> <./image-introduction-methodsCompare/3-left-image_00000615_0-noMultiViews
+_outputs.png (PNG copy)> <./image-introduction-methodsCompare/3-left-image_0000
+0615_0-our_outputs.png (PNG copy)>]
 (./Multi-view Scene Image Inpainting Based on Conditional Generative Adversaria
-l Networks.bbl [2 <./self_driver_top_view-eps-converted-to.pdf> <./image-introd
-uction-methodsCompare/3-left-image_00000615_0-inputs.png (PNG copy)> <./image-i
-ntroduction-methodsCompare/3-left-image_00000615_0-conditions.png (PNG copy)> <
-./image-introduction-methodsCompare/3-left-image_00000615_0-targets.png (PNG co
-py)> <./image-introduction-methodsCompare/3-left-image_00000615_0-patchMatch_ou
-tput.png (PNG copy)> <./image-introduction-methodsCompare/3-left-image_00000615
-_0-noMultiViews_outputs.png (PNG copy)> <./image-introduction-methodsCompare/3-
-left-image_00000615_0-our_outputs.png (PNG copy)>]) [3]
+l Networks.bbl [3 <./networkStruct.png>]) [4
+
+]
 (./Multi-view Scene Image Inpainting Based on Conditional Generative Adversaria
 l Networks.aux) ) 
 Here is how much of TeX's memory you used:
- 5923 strings out of 495028
- 88036 string characters out of 6181497
- 141282 words of memory out of 5000000
- 8991 multiletter control sequences out of 15000+600000
+ 5929 strings out of 495028
+ 88159 string characters out of 6181497
+ 141290 words of memory out of 5000000
+ 8996 multiletter control sequences out of 15000+600000
  210843 words of font info for 258 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
  53i,10n,92p,1467b,429s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -758,10 +766,10 @@ ist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
 utmri8a.pfb>
 Output written on "Multi-view Scene Image Inpainting Based on Conditional Gener
-ative Adversarial Networks.pdf" (3 pages, 739751 bytes).
+ative Adversarial Networks.pdf" (4 pages, 1482830 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
- 26 compressed objects within 1 object stream
+ 49 PDF objects out of 1000 (max. 8388607)
+ 28 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
