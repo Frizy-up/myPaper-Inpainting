@@ -166,4 +166,9 @@ S.~Xie, R.~Girshick, P.~Dollár, Z.~Tu, and K.~He, ``Aggregated residual
   transformations for deep neural networks,'' in \emph{Proc. IEEE Conf.
   Computer Vision and Pattern Recognition (CVPR)}, Jul. 2017, pp. 5987--5995.
 
+\bibitem{BoesenLindboLarsen2015:apa:Autoencoding}
+A.~Boesen Lindbo~Larsen, S.~Kaae~S{\o}nderby, H.~Larochelle, and O.~Winther,
+  ``Autoencoding beyond pixels using a learned similarity metric,'' \emph{arXiv
+  preprint arXiv:1512.09300}, 2015.
+
 \end{thebibliography}

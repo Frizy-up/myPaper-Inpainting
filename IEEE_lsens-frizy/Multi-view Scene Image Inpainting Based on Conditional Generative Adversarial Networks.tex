@@ -601,6 +601,12 @@ where G tries to minimize this objective against an adversarial D that tries to 
 \end{equation}
 
 \subsection{Joint Loss Function}
+A lot of previous researches have demonstrated that only use reconstructed loss(L1 loss or L2 loss) to generation image can produce blurry results \cite{BoesenLindboLarsen2015:apa:Autoencoding,Pathak2016::Context,Isola2017::Image}, adding adversarial loss results in much sharper predictions. Our method combine multiple viewpoint images, jointing reconstructed loss and adversarial loss to inpaint image can produce high quality results.
+Our final objective is
+\begin{equation}
+    G_{*} = \arg \min_{G} \max_{D} {\lambda}_{L_{CGAN}} L_{CGAN}(G,D) + {\lambda}_{L_1} L_{L_1}(G)
+\end{equation}
+where, ${\lambda}_{L_{CGAN}}$ and ${\lambda}_{L_1}$ are the weight of adversarial loss and reconstructed loss respectively.
 
 \subsubsection{subsub}
 
