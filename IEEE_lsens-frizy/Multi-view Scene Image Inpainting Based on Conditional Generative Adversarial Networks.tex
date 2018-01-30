@@ -579,11 +579,28 @@ Group convolution is the network optimization design method proposed in MobileNe
 We introduce group convolution and channel shuffle in our method to increase the exchange of information between multiple views.
 Contrastive experiments found that these measures are effective. In order to further reduce the amount of parameters and computation, we only perform channel shuffle after group convolution, and only carry out a pointwise convolution after bottleneck layer to fusion these feature map.
 
-\subsection{Conditional Generative Adversarial Nets}
+\subsection{Conditional Generative Adversarial Networks}
 
 Generative Adversarial Networks \cite{Goodfellow2014::Generative} is composed of a generator(G) and a discriminator(D). Discriminators can authenticate real data and generate data, and the generator's goal is to generate more realistic data to fool the discriminator. This is a two-player game, the discriminator improve the ability to distinguish between true and false by gradually and generator learns to produce more realistic sample to deceive the discriminator. Through training iteration, the generator can produce "real data", that is, the generator learned the distribution of the real data.
+However, the modes of the generator produces is stochastic and uncontrollable. Mehdi et al. \cite{Mirza2014:CS:Conditional} solve this problem by feeding a condition on both the generator and discriminator, proposed conditional generative adversarial networks(CGAN). Our image inpainting method based on CGAN architecture, which the condition is the other viewpoint image. Fig \ref{fig:CGAN} show the diagram of our method.
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3.0in]{CGAN}
+\caption{Multi-view scene image inpainting based on conditional generative adversarial networks method diagram.}
+\label{fig:CGAN}
+\end{figure}
+In generator, we use both left defective image($\tilde{x}$) and the corresponding right image(y) to reconstruct the original intact left image($G(y,\tilde{x})$). The discriminator distinguishes between fake $\{y, G(y,\tilde{x})\}$ and real $\{y, x\}$  tuples. 
 
-Mehdi generated against the conditions of network model is put forward, in the generated model and the discriminant model are introduced in the modeling of condition variables, and use the additional information on the model increase condition, can guide the data generation process. It creates an image of the specified category on the MNIST dataset with a category label as a condition variable.
+The objective of the CGAN can be expressed as 
+\begin{equation}
+    L_{CGAN} (G,D) = E_{y,x} [\log D(y,x)] + E_{y,\tilde{x}} [\log(1-D(y,G(y,\tilde{x})))]
+\end{equation}
+where G tries to minimize this objective against an adversarial D that tries to maximize it, i.e. 
+\begin{equation}
+    G_{*} = \arg \min_{G} \max_{D} L_{CGAN}(G,D)
+\end{equation}
+
+\subsection{Joint Loss Function}
 
 \subsubsection{subsub}
 
