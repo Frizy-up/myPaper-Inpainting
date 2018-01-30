@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.1.21)  30 JAN 2018 00:54
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.1.21)  30 JAN 2018 10:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -746,18 +746,31 @@ _outputs.png (PNG copy)> <./image-introduction-methodsCompare/3-left-image_0000
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.03749> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 495.
 
+<stn.png, id=24, 1012.38225pt x 359.54324pt>
+File: stn.png Graphic file (type png)
+ <use stn.png>
+Package pdftex.def Info: stn.png used on input line 511.
+(pdftex.def)             Requested size: 216.81pt x 76.99855pt.
+ [3 <./networkStruct.png>] <interpolation.png, id=36, 446.41782pt x 346.29375pt
+>
+File: interpolation.png Graphic file (type png)
+
+<use interpolation.png>
+Package pdftex.def Info: interpolation.png used on input line 562.
+(pdftex.def)             Requested size: 144.54pt x 112.1214pt.
+
 (./Multi-view Scene Image Inpainting Based on Conditional Generative Adversaria
-l Networks.bbl [3 <./networkStruct.png>]) [4
+l Networks.bbl [4 <./stn.png> <./interpolation.png>]) [5
 
 ]
 (./Multi-view Scene Image Inpainting Based on Conditional Generative Adversaria
 l Networks.aux) ) 
 Here is how much of TeX's memory you used:
- 5950 strings out of 495028
- 88291 string characters out of 6181497
- 141294 words of memory out of 5000000
- 8997 multiletter control sequences out of 15000+600000
- 220022 words of font info for 278 fonts, out of 8000000 for 9000
+ 5969 strings out of 495028
+ 88557 string characters out of 6181497
+ 141318 words of memory out of 5000000
+ 9009 multiletter control sequences out of 15000+600000
+ 220952 words of font info for 283 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
  53i,10n,92p,1467b,429s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</u
@@ -765,17 +778,18 @@ sr/share/texlive/texmf-dist/fonts/type1/public/newtx/rntxmi.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/newtx/rntxmi5.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/newtx/rtxmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txs
-y.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
-rw/times/utmri8a.pfb>
+/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txex-
+bar.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
+tmri8a.pfb>
 Output written on "Multi-view Scene Image Inpainting Based on Conditional Gener
-ative Adversarial Networks.pdf" (4 pages, 1502349 bytes).
+ative Adversarial Networks.pdf" (5 pages, 1775344 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
- 48 compressed objects within 1 object stream
+ 86 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

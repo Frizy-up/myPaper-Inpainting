@@ -156,4 +156,14 @@ A.~Ess, B.~Leibe, K.~Schindler, and L.~V. Gool, ``A mobile vision system for
   robust multi-person tracking,'' in \emph{Proc. IEEE Conf. Computer Vision and
   Pattern Recognition}, Jun. 2008, pp. 1--8.
 
+\bibitem{Chollet2017::Xception:}
+F.~Chollet, ``Xception: Deep learning with depthwise separable convolutions,''
+  in \emph{Proc. IEEE Conf. Computer Vision and Pattern Recognition (CVPR)},
+  Jul. 2017, pp. 1800--1807.
+
+\bibitem{Xie2017::Aggregated}
+S.~Xie, R.~Girshick, P.~Dollár, Z.~Tu, and K.~He, ``Aggregated residual
+  transformations for deep neural networks,'' in \emph{Proc. IEEE Conf.
+  Computer Vision and Pattern Recognition (CVPR)}, Jul. 2017, pp. 5987--5995.
+
 \end{thebibliography}

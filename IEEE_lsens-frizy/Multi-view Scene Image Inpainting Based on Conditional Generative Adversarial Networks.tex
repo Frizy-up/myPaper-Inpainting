@@ -503,13 +503,91 @@ We also introduce spatial transform, group convolution and channel shuffle in ge
 % needed in second column of first page if using \IEEEpubid
 %\IEEEpubidadjcol
 
-\subsection{Encoder-decoder}
+\subsection{Spatial Transform}
 
-The generator is a simple encoder-decoder pipeline. This architecture try to reconstruct image after passing it to a low-dimensional bottleneck layer. 
+Spatial transformer networks(STN) \cite{Jaderberg2015::Spatial} is a learnable module, it can be inserted into convolutional architectures, giving neural networks the ability to actively spatially transform feature maps. Using STN, neural networks can select the most important area of the the image and transform it into the optimal posture which are benefit for the task. We use STN at the begin of the encoder to carry out affine transformation on the right image, in order to achieve the scene aligning between the two image. Fig \ref{fig:stn} show the STN models applied in our method.
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3.0in]{stn}
+\caption{The spatial transform networks used in our method.}
+\label{fig:stn}
+\end{figure}
+The model input the right image, through the localisation net(four convolutional layers and two fully connected layer) to obtain the six affine transformation coeficients($\theta$). Having these coeficients we can do affine transform using the follow formula:
+\begin{equation}
+    \left [ \begin{array}{ccc}
+             \theta_{11} & \theta_{12} & \theta_{13} \\
+             \theta_{21} & \theta_{22} & \theta_{23}
+           \end{array}
+    \right ]
+    \left [ \begin{array}{c}
+              x^{Source} \\
+              y^{Source} \\
+              1
+            \end{array}
+    \right ]
+    =
+    \left [ \begin{array}{c}
+              x^{Target} \\
+              y^{Target}
+            \end{array}
+    \right ]
+\end{equation}
+Transformed the above formula can we get the mapping of the target image pixel coordinates at the original image pixel coordinates:
+\begin{equation}
+    \left [ \begin{array}{ccc}
+             \theta_{11} & \theta_{12} & \theta_{13} \\
+             \theta_{21} & \theta_{22} & \theta_{23}
+           \end{array}
+    \right ]^{-1}
+    \left [ \begin{array}{c}
+              x^{Target} \\
+              y^{Target} \\
+              1
+            \end{array}
+    \right ]
+    =
+    \left [ \begin{array}{c}
+              x^{Source} \\
+              y^{Source}
+            \end{array}
+    \right ]
+\end{equation}
+In this way, the transformation target image becomes pick up pixels from original image:
+\begin{equation}
+    PixelMatrix^{Target} = PixelMatrix^{Source}[x^{Source},y^{Source}]
+\end{equation}
+However, the $x^{Source}$ and $y^{Source}$ may be floating numbers, which does not correspond to the arbitrary integral coordinate values of the original image. We need to take advantage of the local approximation principle of the image data, take the adjacent pixels to do the average generation, namely, interpolation. Fig show a pixel coordinate locates in the middle of four pixels. 
+\begin{figure}[!t]
+\centering
+  \includegraphics[width=2.0in]{interpolation}
+  \caption{Bilinear interpolation schematic.}
+  \label{bilinearInterpolation}
+\end{figure}
+We use bilinear interpolation to get the pixel value:
+\begin{align}
+  Pixel(x,y)
+   &= \frac{x_1 - x}{x_1 - x_0} \cdot {\frac{y_1 - y}{y_1 - y_0}} \cdot {Pixel(x_0, y_0)} \nonumber \\
+   &= \frac{x - x_0}{x_1 - x_0} \cdot {\frac{y_1 - y}{y_1 - y_0}} \cdot {Pixel(x_1, y_0)} \nonumber \\
+   &= \frac{x_1 - x}{x_1 - x_0} \cdot {\frac{y - y_0}{y_1 - y_0}} \cdot {Pixel(x_0, y_1)} \nonumber \\
+   &= \frac{x - x_0}{x_1 - x_0} \cdot {\frac{y - y_0}{y_1 - y_0}} \cdot {Pixel(x_1, y_1)}
+\end{align}
+This is what the T(G) doing. The "sampler" to finish the transform from input image to target. 
 
-\subsubsection{Spatial Transform}
+\subsection{Group Convolution and Channel Shuffle}
 
-Subsubsection text here.
+Group convolution is the network optimization design method proposed in MobileNets \cite{Howard2017:apa:Mobilenets} . The idea is that implement group convolution first and then using pointwise convolution to merge these group feature map. This can reduce the amount of network parameters and computation. This idea also used in Xception \cite{Chollet2017::Xception:} and ResNeXt \cite{Xie2017::Aggregated}. Due to the costly dense pointwise convolutions, shuffleNet \cite{Zhang2017:apa:Shufflenet} extends the idea of group convolution, using pointwise group convolution and channel shuffle operation to further reduce the number of parameters and calculation.
+We introduce group convolution and channel shuffle in our method to increase the exchange of information between multiple views.
+Contrastive experiments found that these measures are effective. In order to further reduce the amount of parameters and computation, we only perform channel shuffle after group convolution, and only carry out a pointwise convolution after bottleneck layer to fusion these feature map.
+
+\subsection{Conditional Generative Adversarial Nets}
+
+Generative Adversarial Networks \cite{Goodfellow2014::Generative} is composed of a generator(G) and a discriminator(D). Discriminators can authenticate real data and generate data, and the generator's goal is to generate more realistic data to fool the discriminator. This is a two-player game, the discriminator improve the ability to distinguish between true and false by gradually and generator learns to produce more realistic sample to deceive the discriminator. Through training iteration, the generator can produce "real data", that is, the generator learned the distribution of the real data.
+
+Mehdi generated against the conditions of network model is put forward, in the generated model and the discriminant model are introduced in the modeling of condition variables, and use the additional information on the model increase condition, can guide the data generation process. It creates an image of the specified category on the MNIST dataset with a category label as a condition variable.
+
+\subsubsection{subsub}
+
+
 %\footnote{IEEE Sensors Letters does allow footnotes.}
 
 
