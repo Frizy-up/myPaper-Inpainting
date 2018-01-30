@@ -492,17 +492,23 @@ In the paper, we propose a novel image inpainting method which can be used in mu
 \end{figure*}
 It consists of a generator and a discriminator where the generator is a autoencoder consisting of an encoder and a decoder. We test the proposed method in the public dataset \cite{Ess2008::mobile}, what is acquired by the ETH Lab in Zurich using a mobile platform equipped with two cameras. We damaged the left camera image and tried to restore it int help of the right camera image. The generator encode the left camera damaged image and the right camera image, then decode them to reconstruct the sound left image in order to fool the discriminator. The discriminator learn to classify between fake {right image, synthesized left image} and real {right image, left image} tuples. The encoder adopt group convolution and channel shuffle to full exchanging and fusing information between two camera. There also has skip connected from encoder to decoder to give the generator a means to circumvent the bottleneck for information. At the begin of the generator, the spatial transform networks is carried out on the right image to achieve the purpose of context alignment in the abnormal area. Experiments will show that all the strategies adopted in our method are effective.
 
-\subsection{Generator}
+\subsection{Encoder-decoder}
 
 The generator is a simple encoder-decoder pipeline. This architecture try to reconstruct image after passing it to a low-dimensional bottleneck layer. By doing this, the networks learned the image content and semantically \cite{Hinton2006:s:Reducing,Bengio:Co:Learning,Vincent2008::Extracting}. Pathak et al. \cite{Pathak2016::Context} first integrate this architecture in their Context-Encoders method to do image inpainting. They use L2 distance to capture the overall structure of the missing region in relation to the context. Isola et al. \cite{Isola2017::Image} using L1 distance replace L2 distance to reduce the blurring in their Image-to-Image method. Our method also adopts L1 distance to reconstruct the original left image, the difference is that we joint the abnormal left image($\tilde{x}$) and corresponding right image($y$) to achieve the goal:
 \begin{equation}
     L_{L_1}(G) = E_{x,y,z} [\|x-G(y,\tilde{x})\|_1]
 \end{equation}
-Like Image-to-Image method, we also add skip connected from encoder to decoder in each layer. This strategy increase the information flow from encoder to decoder and decrease the difficulty of reconstructing, so that the generator can focuses on the recovery of the abnormal areas.
+Like Image-to-Image method, we add skip connected from encoder to decoder in each layer. This strategy increase the information flow from encoder to decoder and decrease the difficulty of reconstructing, so that the generator can focuses on the recovery of the abnormal areas.
+We also introduce spatial transform, group convolution and channel shuffle in generator to better fuse the left and right image information.
 % needed in second column of first page if using \IEEEpubid
 %\IEEEpubidadjcol
 
-\subsubsection{Subsubsection Heading Here}
+\subsection{Encoder-decoder}
+
+The generator is a simple encoder-decoder pipeline. This architecture try to reconstruct image after passing it to a low-dimensional bottleneck layer. 
+
+\subsubsection{Spatial Transform}
+
 Subsubsection text here.
 %\footnote{IEEE Sensors Letters does allow footnotes.}
 
