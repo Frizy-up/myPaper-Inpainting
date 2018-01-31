@@ -746,8 +746,8 @@ We build our models in tensorflow. We set the reconstructed loss weight ${\lambd
 \label{fig:experiment2}
 \end{figure*}
 
-In order to evaluates our proposed approach visually and quantitatively. We compared our approach with other methods, including PatchMatch, Context-Encoder and Image-to-Image, demonstrating its effectiveness in image inpainting. We further analyzed impact of each strategy applied in our approach by remove individual components one by one. We show some results in Fig \ref{fig:experiment3}, Fig \ref{fig:experiment}, Fig \ref{fig:experiment2}. As we can see in Fig \ref{fig:experiment3:patchMatch}, Fig \ref{fig:experiment:patchMatch} and Fig \ref{fig:experiment2:patchMatch}, PatchMatch filling the hole according the surrounding, when objects to restore in the blank is different from the surrounding, PatchMatch result will missing it whole. For example, the slender pipe in \ref{fig:experiment3:patchMatch}, the boy hand in \ref{fig:experiment:patchMatch} and the red bag in \ref{fig:experiment2:patchMatch} are all missing. Context-Encoder and Image-to-Image results have obvious artifacts. Because the two methods generate blocks "out of thin air". especially the Context-Encoder, which has no skip connection from encoder to decoder, most detail need to reconstruct. Our methods in the help of other viewpoint information can produce best quality image(Fig \ref{fig:experiment3:ours}, Fig \ref{fig:experiment:ours}, Fig \ref{fig:experiment2:ours}). When remove L1 Loss in our method, the generator has no guidance and the result more chaotic and sharp (Fig \ref{fig:experiment3:noL1}, Fig \ref{fig:experiment:noL1}, Fig \ref{fig:experiment2:noL1}). On the contrary, When remove adversarial loss in our method, the result is blurry (Fig \ref{fig:experiment3:noGAN}, Fig \ref{fig:experiment:noGAN}, Fig \ref{fig:experiment2:noGAN}). Compared (e) with (i) and (j) we find that using group convolution, channel shuffle and spatial transform networks can improve the quality of result images slightly. See the STN result images (Fig \ref{fig:experiment3:stn}, Fig \ref{fig:experiment:stn} and Fig \ref{fig:experiment2:stn}), the right images are be slightly transformed to left in order to achieve the purpose of aligning the scene between left image and right image. Table \ref{resultTable} reports quantitative results, our method achieves highest numerical performance. 
-
+In order to evaluates our proposed approach visually and quantitatively. We compared our approach with other methods, including PatchMatch, Context-Encoder and Image-to-Image, demonstrating its effectiveness in image inpainting. We further analyzed impact of each strategy applied in our approach by remove individual components one by one. We show some results in Fig \ref{fig:experiment3}, Fig \ref{fig:experiment}, Fig \ref{fig:experiment2}. As we can see in Fig \ref{fig:experiment3:patchMatch}, Fig \ref{fig:experiment:patchMatch} and Fig \ref{fig:experiment2:patchMatch}, PatchMatch filling the hole according the surrounding, when objects to restore in the blank is different from the surrounding, PatchMatch result will missing it whole. For example, the slender pipe in \ref{fig:experiment3:patchMatch}, the boy hand in \ref{fig:experiment:patchMatch} and the red bag in \ref{fig:experiment2:patchMatch} are all missing. Context-Encoder and Image-to-Image results have obvious artifacts. Because the two methods generate blocks "out of thin air". especially the Context-Encoder, which has no skip connection from encoder to decoder, most detail need to reconstruct. Our methods in the help of other viewpoint information can produce best quality image(Fig \ref{fig:experiment3:ours}, Fig \ref{fig:experiment:ours}, Fig \ref{fig:experiment2:ours}). When remove L1 Loss in our method, the generator has no guidance and the result more chaotic and sharp (Fig \ref{fig:experiment3:noL1}, Fig \ref{fig:experiment:noL1}, Fig \ref{fig:experiment2:noL1}). On the contrary, When remove adversarial loss in our method, the result is blurry (Fig \ref{fig:experiment3:noGAN}, Fig \ref{fig:experiment:noGAN}, Fig \ref{fig:experiment2:noGAN}). Compared (e) with (i) and (j) we find that using group convolution, channel shuffle and spatial transform networks can improve the quality of result images slightly. See the STN result images (Fig \ref{fig:experiment3:stn}, Fig \ref{fig:experiment:stn} and Fig \ref{fig:experiment2:stn}), the right images are be slightly transformed to left in order to achieve the purpose of aligning the scene between left image and right image. We think all the strategies we adopt can better improve the information fusion between multi-view.
+Table \ref{resultTable} reports quantitative results, our method achieves highest numerical performance. 
 \begin{table}[!t]
   \caption{Image inpainting accuracy for different methods.}
   \centering
@@ -775,7 +775,90 @@ In order to evaluates our proposed approach visually and quantitatively. We comp
   \end{tabular}
   \label{resultTable}
 \end{table}
+In addition, we tested the inpainting effect of our method in any damaged area in the image. Fig shows the results.
+\begin{figure*}[t]
+\centering
+\subfloat[]{\includegraphics[width=1.0in]{random/3-left-image_00000615_0-inputs.png}%
+\label{fig:experiment_random:input}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{random/3-left-image_00000615_0-conditions.png}%
+\label{fig:experiment_random:condition}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{random/3-left-image_00000615_0-targets.png}%
+\label{fig:experiment_random:target}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{random/3-left-image_00000615_0-stns.png}%
+\label{fig:experiment_random:stn}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{random/3-left-image_00000615_0-outputs.png}%
+\label{fig:experiment_random:ours}}
 
+\caption{Compare different image inpainting methods. (a) Input Left camera image. (b) Right camera image. (c) Target image. (d) The STN result. (e) Ours result.}
+\label{fig:experiment_random}
+\end{figure*}
+
+\begin{figure*}[t]
+\centering
+\subfloat[]{\includegraphics[width=1.0in]{random/5-left-image_00000826_0-inputs.png}%
+\label{fig:experiment_random2:input}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{random/5-left-image_00000826_0-conditions.png}%
+\label{fig:experiment_random2:condition}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{random/5-left-image_00000826_0-targets.png}%
+\label{fig:experiment_random2:target}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{random/5-left-image_00000826_0-stns.png}%
+\label{fig:experiment_random2:stn}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{random/5-left-image_00000826_0-outputs.png}%
+\label{fig:experiment_random2:ours}}
+
+\caption{Compare different image inpainting methods. (a) Input Left camera image. (b) Right camera image. (c) Target image. (d) The STN result. (e) Ours result.}
+\label{fig:experiment_random2}
+\end{figure*}
+
+\begin{figure*}[t]
+\centering
+\subfloat[]{\includegraphics[width=1.0in]{random/lp-left-image_00005496_0-inputs.png}%
+\label{fig:experiment_random3:input}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{random/lp-left-image_00005496_0-conditions.png}%
+\label{fig:experiment_random3:condition}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{random/lp-left-image_00005496_0-targets.png}%
+\label{fig:experiment_random3:target}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{random/lp-left-image_00005496_0-stns.png}%
+\label{fig:experiment_random3:stn}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{random/lp-left-image_00005496_0-outputs.png}%
+\label{fig:experiment_random3:ours}}
+
+\caption{Compare different image inpainting methods. (a) Input Left camera image. (b) Right camera image. (c) Target image. (d) The STN result. (e) Ours result.}
+\label{fig:experiment_random3}
+\end{figure*}
+
+\begin{figure*}[t]
+\centering
+\subfloat[]{\includegraphics[width=1.0in]{random/sun-left-image_00000418_0-inputs.png}%
+\label{fig:experiment_random4:input}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{random/sun-left-image_00000418_0-conditions.png}%
+\label{fig:experiment_random4:condition}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{random/sun-left-image_00000418_0-targets.png}%
+\label{fig:experiment_random4:target}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{random/sun-left-image_00000418_0-stns.png}%
+\label{fig:experiment_random4:stn}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{random/sun-left-image_00000418_0-outputs.png}%
+\label{fig:experiment_random4:ours}}
+
+\caption{Compare different image inpainting methods. (a) Input Left camera image. (b) Right camera image. (c) Target image. (d) The STN result. (e) Ours result.}
+\label{fig:experiment_random4}
+\end{figure*}
 %\footnote{IEEE Sensors Letters does allow footnotes.}
 
 
