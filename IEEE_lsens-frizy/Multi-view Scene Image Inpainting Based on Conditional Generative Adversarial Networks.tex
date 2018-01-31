@@ -490,7 +490,7 @@ In the paper, we propose a novel image inpainting method which can be used in mu
 \caption{The network architecture of our method.}
 \label{fig:networkStruct}
 \end{figure*}
-It consists of a generator and a discriminator where the generator is a autoencoder consisting of an encoder and a decoder. We test the proposed method in the public dataset \cite{Ess2008::mobile}, what is acquired by the ETH Lab in Zurich using a mobile platform equipped with two cameras. We damaged the left camera image and tried to restore it int help of the right camera image. The generator encode the left camera damaged image and the right camera image, then decode them to reconstruct the sound left image in order to fool the discriminator. The discriminator learn to classify between fake {right image, synthesized left image} and real {right image, left image} tuples. The encoder adopt group convolution and channel shuffle to full exchanging and fusing information between two camera. There also has skip connected from encoder to decoder to give the generator a means to circumvent the bottleneck for information. At the begin of the generator, the spatial transform networks is carried out on the right image to achieve the purpose of context alignment in the abnormal area. Experiments will show that all the strategies adopted in our method are effective.
+It consists of a generator and a discriminator where the generator is a autoencoder consisting of an encoder and a decoder. We test the proposed method in the public dataset \cite{Ess2008::mobile}, what is acquired by the ETH Zurich vision group using using a mobile platform equipped with two cameras. We damaged the left camera image and tried to restore it int help of the right camera image. The generator encode the left camera damaged image and the right camera image, then decode them to reconstruct the sound left image in order to fool the discriminator. The discriminator learn to classify between fake {right image, synthesized left image} and real {right image, left image} tuples. The encoder adopt group convolution and channel shuffle to full exchanging and fusing information between two camera. There also has skip connected from encoder to decoder to give the generator a means to circumvent the bottleneck for information. At the begin of the generator, the spatial transform networks is carried out on the right image to achieve the purpose of context alignment in the abnormal area. Experiments will show that all the strategies adopted in our method are effective.
 
 \subsection{Encoder-decoder}
 
@@ -602,14 +602,71 @@ where G tries to minimize this objective against an adversarial D that tries to 
 
 \subsection{Joint Loss Function}
 A lot of previous researches have demonstrated that only use reconstructed loss(L1 loss or L2 loss) to generation image can produce blurry results \cite{BoesenLindboLarsen2015:apa:Autoencoding,Pathak2016::Context,Isola2017::Image}, adding adversarial loss results in much sharper predictions. Our method combine multiple viewpoint images, jointing reconstructed loss and adversarial loss to inpaint image can produce high quality results.
-Our final objective is
+\begin{figure*}[t]
+\centering
+\subfloat[]{\includegraphics[width=1.0in]{image-introduction-methodsCompare/3-left-image_00000615_0-inputs.png}%
+\label{fig:compare:input}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{image-introduction-methodsCompare/3-left-image_00000615_0-conditions.png}%
+\label{fig:compare:condition}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{image-introduction-methodsCompare/3-left-image_00000615_0-targets.png}%
+\label{fig:compare:target}}
+\vfil
+\subfloat[]{\includegraphics[width=1.0in]{image-introduction-methodsCompare/3-left-image_00000615_0-patchMatch_output.png}%
+\label{fig:compare:patchMatch}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{image-introduction-methodsCompare/3-left-image_00000615_0-noMultiViews_outputs.png}%
+\label{fig:compare:Image2Image}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{image-introduction-methodsCompare/3-left-image_00000615_0-our_outputs.png}%
+\label{fig:compare:ourMethod}}
+
+\caption{Qualitative illustration of the different image inpainting methods. (a) Given an image with a missing region captured by left camera. (b) Given the same scene image captured by right camera. (c) The target of the left image inpainting. (d) PatchMatch method result. (e) Image-to-Image method result. (f) Our method result. }
+\label{fig:compare:experiments}
+\end{figure*}
+The final objective is
 \begin{equation}
     G_{*} = \arg \min_{G} \max_{D} {\lambda}_{L_{CGAN}} L_{CGAN}(G,D) + {\lambda}_{L_1} L_{L_1}(G)
 \end{equation}
 where, ${\lambda}_{L_{CGAN}}$ and ${\lambda}_{L_1}$ are the weight of adversarial loss and reconstructed loss respectively.
 
-\subsubsection{subsub}
+\section{Experiments}
 
+\subsection{Database Description}
+
+In order to evaluate the image inpainting effect of our method, we conducted experiments on a public dataset collected by the a pair of AVT Marlins F033C mounted on a chariot respectively a car, with a resolution of 640 x 480 (bayered), and a framerate of 13--14 FPS \cite{Ess2008::mobile}. The dataset consists of 8 consecutive time series, a total of 5263 pairs of synchronized time frame images. Experiment randomly take 4208 pairs to train, 1055 images to do test. The left and right images are all resized to 256 x 256 before input to the network. We set a blank area in the middle of the left camera images with 76 pixels (the RGB pixel values are set to 255). We train and and test our the proposed method using this defective left camera images and the corresponding right camera images. In the end, we also carry out experiments with a stochastic shape and color block areas in the left camera images. 
+
+\subsection{Experimental Setup}
+
+In the encoder each convolution is adopt "Convolution ---> Batch Normalization ---> Relu" structure. The convolution kernal size is $4 \times 4$, with 1 padding and 2 stride. After one convolution, the height and width of the feature maps cut half and channels increase twice. however, when the numbers of channels reaches to 512, keep it and don't increase any more. At the bottleneck layer, the feature map dimensionality is $1 \times 1 \times 1$. We add a pointwise convolution in the later. In the decoder, we adopt "Deconvolution ---> Batch Normalization ---> Leak Relu" structure as the reverse of convolution to reconstruct the original left camera image. The discriminator and the localisation networks structure are showed in Fig \ref{fig:networkStruct} and Fig \ref{fig:stn} respectively.
+
+We build our models in tensorflow. We set the reconstructed loss weight ${\lambda}_{L_1}$ to 100 and adversarial loss ${\lambda}_{L_{CGAN}}$ to 1, using the back-propagation algorithm with the Adam \cite{Kingma2014:apa:Adam:} optimization to tune the parameters. 
+
+\subsection{Experimental Results}
+
+\begin{figure*}[t]
+\centering
+\subfloat[]{\includegraphics[width=1.0in]{image-introduction-methodsCompare/3-left-image_00000615_0-inputs.png}%
+\label{fig:compare:input}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{image-introduction-methodsCompare/3-left-image_00000615_0-conditions.png}%
+\label{fig:compare:condition}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{image-introduction-methodsCompare/3-left-image_00000615_0-targets.png}%
+\label{fig:compare:target}}
+\vfil
+\subfloat[]{\includegraphics[width=1.0in]{image-introduction-methodsCompare/3-left-image_00000615_0-patchMatch_output.png}%
+\label{fig:compare:patchMatch}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{image-introduction-methodsCompare/3-left-image_00000615_0-noMultiViews_outputs.png}%
+\label{fig:compare:Image2Image}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{image-introduction-methodsCompare/3-left-image_00000615_0-our_outputs.png}%
+\label{fig:compare:ourMethod}}
+\caption{Qualitative illustration of the different image inpainting methods. (a) Given an image with a missing region captured by left camera. (b) Given the same scene image captured by right camera. (c) The target of the left image inpainting. (d) PatchMatch method result. (e) Image-to-Image method result. (f) Our method result. }
+\label{fig:compare:experiments}
+\end{figure*}
 
 %\footnote{IEEE Sensors Letters does allow footnotes.}
 
