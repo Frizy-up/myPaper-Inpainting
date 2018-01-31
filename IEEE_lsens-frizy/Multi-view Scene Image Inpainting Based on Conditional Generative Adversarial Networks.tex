@@ -591,6 +591,47 @@ However, the modes of the generator produces is stochastic and uncontrollable. M
 \end{figure}
 In generator, we use both left defective image($\tilde{x}$) and the corresponding right image(y) to reconstruct the original intact left image($G(y,\tilde{x})$). The discriminator distinguishes between fake $\{y, G(y,\tilde{x})\}$ and real $\{y, x\}$  tuples. 
 
+\begin{figure*}[t]
+\centering
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/ours/lp-left-image_00004944_0-inputs.png}%
+\label{fig:experiment3:input}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/ours/lp-left-image_00004944_0-conditions.png}%
+\label{fig:experiment3:condition}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/ours/lp-left-image_00004944_0-targets.png}%
+\label{fig:experiment3:target}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/ours/lp-left-image_00004944_0-stns.png}%
+\label{fig:experiment3:stn}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/ours/lp-left-image_00004944_0-outputs.png}%
+\label{fig:experiment3:ours}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/PatchMatch/lp-left-image_00004944_0-outputs.png}%
+\label{fig:experiment3:patchMatch}}
+\vfil
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/L2&noCondition/lp-left-image_00004944_0-outputs.png}%
+\label{fig:experiment3:context-encoder}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/noMultiViews/lp-left-image_00004944_0-outputs.png}%
+\label{fig:experiment3:Image-to-Image}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/noShuffle/lp-left-image_00004944_0-outputs.png}%
+\label{fig:experiment3:noShuffle}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/noSTN/lp-left-image_00004944_0-outputs.png}%
+\label{fig:experiment3:noSTN}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/noGAN/lp-left-image_00004944_0-outputs.png}%
+\label{fig:experiment3:noGAN}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/noL1/lp-left-image_00004944_0-outputs.png}%
+\label{fig:experiment3:noL1}}
+\caption{Compare different image inpainting methods. (a) Input Left camera image. (b) Right camera image. (c) Target image. (d) The STN result. (e) Ours result. (f) Patch Match result. (g) Contexter-encoder result. (h) Image-to-Image result. (i) Ours(no shuffle) result. (j) Ours(no STN) result. (k) Ours(no GAN) result. (l) Ours(no L1) result.}
+\label{fig:experiment3}
+\end{figure*}
+
 The objective of the CGAN can be expressed as 
 \begin{equation}
     L_{CGAN} (G,D) = E_{y,x} [\log D(y,x)] + E_{y,\tilde{x}} [\log(1-D(y,G(y,\tilde{x})))]
@@ -602,29 +643,6 @@ where G tries to minimize this objective against an adversarial D that tries to 
 
 \subsection{Joint Loss Function}
 A lot of previous researches have demonstrated that only use reconstructed loss(L1 loss or L2 loss) to generation image can produce blurry results \cite{BoesenLindboLarsen2015:apa:Autoencoding,Pathak2016::Context,Isola2017::Image}, adding adversarial loss results in much sharper predictions. Our method combine multiple viewpoint images, jointing reconstructed loss and adversarial loss to inpaint image can produce high quality results.
-\begin{figure*}[t]
-\centering
-\subfloat[]{\includegraphics[width=1.0in]{image-introduction-methodsCompare/3-left-image_00000615_0-inputs.png}%
-\label{fig:compare:input}}
-\hfil
-\subfloat[]{\includegraphics[width=1.0in]{image-introduction-methodsCompare/3-left-image_00000615_0-conditions.png}%
-\label{fig:compare:condition}}
-\hfil
-\subfloat[]{\includegraphics[width=1.0in]{image-introduction-methodsCompare/3-left-image_00000615_0-targets.png}%
-\label{fig:compare:target}}
-\vfil
-\subfloat[]{\includegraphics[width=1.0in]{image-introduction-methodsCompare/3-left-image_00000615_0-patchMatch_output.png}%
-\label{fig:compare:patchMatch}}
-\hfil
-\subfloat[]{\includegraphics[width=1.0in]{image-introduction-methodsCompare/3-left-image_00000615_0-noMultiViews_outputs.png}%
-\label{fig:compare:Image2Image}}
-\hfil
-\subfloat[]{\includegraphics[width=1.0in]{image-introduction-methodsCompare/3-left-image_00000615_0-our_outputs.png}%
-\label{fig:compare:ourMethod}}
-
-\caption{Qualitative illustration of the different image inpainting methods. (a) Given an image with a missing region captured by left camera. (b) Given the same scene image captured by right camera. (c) The target of the left image inpainting. (d) PatchMatch method result. (e) Image-to-Image method result. (f) Our method result. }
-\label{fig:compare:experiments}
-\end{figure*}
 The final objective is
 \begin{equation}
     G_{*} = \arg \min_{G} \max_{D} {\lambda}_{L_{CGAN}} L_{CGAN}(G,D) + {\lambda}_{L_1} L_{L_1}(G)
@@ -647,26 +665,116 @@ We build our models in tensorflow. We set the reconstructed loss weight ${\lambd
 
 \begin{figure*}[t]
 \centering
-\subfloat[]{\includegraphics[width=1.0in]{image-introduction-methodsCompare/3-left-image_00000615_0-inputs.png}%
-\label{fig:compare:input}}
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/ours/1-left-image_00000117_0-inputs.png}%
+\label{fig:experiment:input}}
 \hfil
-\subfloat[]{\includegraphics[width=1.0in]{image-introduction-methodsCompare/3-left-image_00000615_0-conditions.png}%
-\label{fig:compare:condition}}
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/ours/1-left-image_00000117_0-conditions.png}%
+\label{fig:experiment:condition}}
 \hfil
-\subfloat[]{\includegraphics[width=1.0in]{image-introduction-methodsCompare/3-left-image_00000615_0-targets.png}%
-\label{fig:compare:target}}
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/ours/1-left-image_00000117_0-targets.png}%
+\label{fig:experiment:target}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/ours/1-left-image_00000117_0-stns.png}%
+\label{fig:experiment:stn}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/ours/1-left-image_00000117_0-outputs.png}%
+\label{fig:experiment:ours}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/PatchMatch/1-left-image_00000117_0-outputs.png}%
+\label{fig:experiment:patchMatch}}
 \vfil
-\subfloat[]{\includegraphics[width=1.0in]{image-introduction-methodsCompare/3-left-image_00000615_0-patchMatch_output.png}%
-\label{fig:compare:patchMatch}}
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/L2&noCondition/1-left-image_00000117_0-outputs.png}%
+\label{fig:experiment:context-encoder}}
 \hfil
-\subfloat[]{\includegraphics[width=1.0in]{image-introduction-methodsCompare/3-left-image_00000615_0-noMultiViews_outputs.png}%
-\label{fig:compare:Image2Image}}
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/noMultiViews/1-left-image_00000117_0-outputs.png}%
+\label{fig:experiment:Image-to-Image}}
 \hfil
-\subfloat[]{\includegraphics[width=1.0in]{image-introduction-methodsCompare/3-left-image_00000615_0-our_outputs.png}%
-\label{fig:compare:ourMethod}}
-\caption{Qualitative illustration of the different image inpainting methods. (a) Given an image with a missing region captured by left camera. (b) Given the same scene image captured by right camera. (c) The target of the left image inpainting. (d) PatchMatch method result. (e) Image-to-Image method result. (f) Our method result. }
-\label{fig:compare:experiments}
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/noShuffle/1-left-image_00000117_0-outputs.png}%
+\label{fig:experiment:noShuffle}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/noSTN/1-left-image_00000117_0-outputs.png}%
+\label{fig:experiment:noSTN}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/noGAN/1-left-image_00000117_0-outputs.png}%
+\label{fig:experiment:noGAN}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/noL1/1-left-image_00000117_0-outputs.png}%
+\label{fig:experiment:noL1}}
+\caption{Compare different image inpainting methods. (a) Input Left camera image. (b) Right camera image. (c) Target image. (d) The STN result. (e) Ours result. (f) Patch Match result. (g) Contexter-encoder result. (h) Image-to-Image result. (i) Ours(no shuffle) result. (j) Ours(no STN) result. (k) Ours(no GAN) result. (l) Ours(no L1) result.}
+\label{fig:experiment}
 \end{figure*}
+
+
+\begin{figure*}[t]
+\centering
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/ours/5-left-image_00000604_0-inputs.png}%
+\label{fig:experiment2:input}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/ours/5-left-image_00000604_0-conditions.png}%
+\label{fig:experiment2:condition}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/ours/5-left-image_00000604_0-targets.png}%
+\label{fig:experiment2:target}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/ours/5-left-image_00000604_0-stns.png}%
+\label{fig:experiment2:stn}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/ours/5-left-image_00000604_0-outputs.png}%
+\label{fig:experiment2:ours}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/PatchMatch/5-left-image_00000604_0-outputs.png}%
+\label{fig:experiment2:patchMatch}}
+\vfil
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/L2&noCondition/5-left-image_00000604_0-outputs.png}%
+\label{fig:experiment2:context-encoder}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/noMultiViews/5-left-image_00000604_0-outputs.png}%
+\label{fig:experiment2:Image-to-Image}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/noShuffle/5-left-image_00000604_0-outputs.png}%
+\label{fig:experiment2:noShuffle}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/noSTN/5-left-image_00000604_0-outputs.png}%
+\label{fig:experiment2:noSTN}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/noGAN/5-left-image_00000604_0-outputs.png}%
+\label{fig:experiment2:noGAN}}
+\hfil
+\subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/noL1/5-left-image_00000604_0-outputs.png}%
+\label{fig:experiment2:noL1}}
+\caption{Compare different image inpainting methods. (a) Input Left camera image. (b) Right camera image. (c) Target image. (d) The STN result. (e) Ours result. (f) Patch Match result. (g) Contexter-encoder result. (h) Image-to-Image result. (i) Ours(no shuffle) result. (j) Ours(no STN) result. (k) Ours(no GAN) result. (l) Ours(no L1) result.}
+\label{fig:experiment2}
+\end{figure*}
+
+In order to evaluates our proposed approach visually and quantitatively. We compared our approach with other methods, including PatchMatch, Context-Encoder and Image-to-Image, demonstrating its effectiveness in image inpainting. We further analyzed impact of each strategy applied in our approach by remove individual components one by one. We show some results in Fig \ref{fig:experiment3}, Fig \ref{fig:experiment}, Fig \ref{fig:experiment2}. As we can see in Fig \ref{fig:experiment3:patchMatch}, Fig \ref{fig:experiment:patchMatch} and Fig \ref{fig:experiment2:patchMatch}, PatchMatch filling the hole according the surrounding, when objects to restore in the blank is different from the surrounding, PatchMatch result will missing it whole. For example, the slender pipe in \ref{fig:experiment3:patchMatch}, the boy hand in \ref{fig:experiment:patchMatch} and the red bag in \ref{fig:experiment2:patchMatch} are all missing. Context-Encoder and Image-to-Image results have obvious artifacts. Because the two methods generate blocks "out of thin air". especially the Context-Encoder, which has no skip connection from encoder to decoder, most detail need to reconstruct. Our methods produce best quality image(Fig \ref{fig:experiment3:ours}, Fig \ref{fig:experiment:ours}, Fig \ref{fig:experiment2:ours}). When remove L1 Loss in our method, the generator has no guidance and the result more chaotic and sharp (Fig \ref{fig:experiment3:noL1}, Fig \ref{fig:experiment:noL1}, Fig \ref{fig:experiment2:noL1}). On the contrary, When remove adversarial loss in our method, the result is blurry (Fig \ref{fig:experiment3:noGAN}, Fig \ref{fig:experiment:noGAN}, Fig \ref{fig:experiment2:noGAN}). Compared (e) with (i) and (j) we find that using group convolution and spatial transform networks can improve the quality of result images slightly. 
+
+\begin{table}[htbp]
+  \caption{Image inpainting accuracy for different methods.}
+  \centering
+  \begin{tabular}{c|c|c|c}
+    \hline
+    \bf{Method}             &   \bf{Mean L1 Loss}     &   \bf{Mean L2 Loss}   &   \bf{PSNR}(higher better)   \\
+    \hline
+    \hline
+    PatchMatch       	 &  1.389\%         &  5.305\%          &  26.218db              \\
+    \hline
+    Contex-Encoder       &  3.124\%         &  5.644\%          &  25.221db              \\
+    \hline
+    Image-to-Image       &  1.451\%         &  4.608\%          &  26.980db              \\
+    \hline
+    Ours (no shuffle)    &  1.008\%         &  3.171\%          &  30.421db              \\
+    \hline
+    Ours (no STN)        &  1.000\%         &  3.052\%          &  30.725db              \\
+    \hline
+    Ours (no GAN)        &  1.301\%         &  3.457\%          &  29.521db             \\
+    \hline
+    Ours (no L1)         &  4.009\%         &  7.283\%          &  23.214db             \\
+    \hline
+    Ours                 & \bf{0.985\%}     &  \bf{3.018\%}     &  \bf{30.745db}              \\
+    \hline
+  \end{tabular}
+  \label{resultTable}
+\end{table}
 
 %\footnote{IEEE Sensors Letters does allow footnotes.}
 
@@ -776,8 +884,8 @@ We build our models in tensorflow. We set the reconstructed loss weight ${\lambd
 %
 % Tabular version, loading the array.sty package is recommended:
 %\begin{table}[!t]
-%\caption{Comparison of the HMSIW Semi-Circular Antenna With That of a Conventional Semi-Circular Patch Antenna.}
-%\label{table_example_antenna_tabular}
+%\caption{Image inpainting accuracy for different methods.}
+%\label{resultTable}
 %\centering
 %% increase table row spacing, adjust as needed
 %\renewcommand{\arraystretch}{1.4}
@@ -786,16 +894,16 @@ We build our models in tensorflow. We set the reconstructed loss weight ${\lambd
 %\begin{tabular*}{\columnwidth}{l@{\extracolsep{\fill}}c@{\extracolsep{\fill}}c}
 %\hline
 %\hline
-%Antenna parameters&Semi-cicular&HMSIW semi-circular\rule{0pt}{10pt}\\
-%\noalign{\vskip -3pt}&patch antenna& antenna\rule[-5pt]{0pt}{5pt}\\
+%Antenna parameters     &  Semi-cicular&HMSIW semi-circular\rule{0pt}{10pt}\\
+%\noalign{\vskip -3pt}&patch antenna& antenna\rule[-5pt]{0pt}{5pt}    \\
 %\hline
-%Frequency&3.67 GHz&5.22 GHz\rule{0pt}{10pt}\\
-%Return Loss&-20 dB&-25 dB\\
-%Co-polarization Gain&E-plane: 5.8 dBi&E-plane: 6.4 dBi\\
-%\noalign{\vskip -3pt}&H-plane: 5.8 dBi&H-plane: 5.3 dBi\\
-%Directivity&7.2&6.9\\
-%Radiation Efficiency&82\%&92\%\\
-%Mutual Coupling&-17 dB&-23 dB\rule[-6pt]{0pt}{6pt}\\
+%Frequency              &3.67 GHz          &5.22 GHz\rule{0pt}{10pt}   \\
+%Return Loss            &-20 dB            &-25 dB                     \\
+%Co-polarization Gain   &E-plane: 5.8 dBi  &E-plane: 6.4 dBi           \\
+%\noalign{\vskip -3pt}  &H-plane: 5.8 dBi  &H-plane: 5.3 dBi           \\
+%Directivity            &7.2               &6.9                        \\
+%Radiation Efficiency   &82\%              &92\%                        \\
+%Mutual Coupling        &-17 dB            &-23 dB\rule[-6pt]{0pt}{6pt} \\
 %\hline
 %\hline
 %\end{tabular*}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.1.21)  31 JAN 2018 03:48
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.1.21)  31 JAN 2018 09:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -451,83 +451,7 @@ Package caption Info: Unknown document class (or package),
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 (./Multi-view Scene Image Inpainting Based on Conditional Generative Adversaria
-l Networks.aux
-
-LaTeX Warning: Label `fig:compare:input' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:compare:input' multiply defined.
-
-
-LaTeX Warning: Label `fig:compare:condition' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:compare:condition' multiply defined.
-
-
-LaTeX Warning: Label `fig:compare:target' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:compare:target' multiply defined.
-
-
-LaTeX Warning: Label `fig:compare:patchMatch' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:compare:patchMatch' multiply defined.
-
-
-LaTeX Warning: Label `fig:compare:Image2Image' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:compare:Image2Image' multiply defined.
-
-
-LaTeX Warning: Label `fig:compare:ourMethod' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:compare:ourMethod' multiply defined.
-
-
-LaTeX Warning: Label `fig:compare:input' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:compare:input' multiply defined.
-
-
-LaTeX Warning: Label `fig:compare:condition' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:compare:condition' multiply defined.
-
-
-LaTeX Warning: Label `fig:compare:target' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:compare:target' multiply defined.
-
-
-LaTeX Warning: Label `fig:compare:patchMatch' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:compare:patchMatch' multiply defined.
-
-
-LaTeX Warning: Label `fig:compare:Image2Image' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:compare:Image2Image' multiply defined.
-
-
-LaTeX Warning: Label `fig:compare:ourMethod' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:compare:ourMethod' multiply defined.
-
-
-LaTeX Warning: Label `fig:compare:experiments' multiply defined.
-
-)
+l Networks.aux)
 \openout1 = `"Multi-view Scene Image Inpainting Based on Conditional Generative
  Adversarial Networks.aux"'.
 
@@ -840,128 +764,457 @@ File: CGAN.png Graphic file (type png)
 <use CGAN.png>
 Package pdftex.def Info: CGAN.png used on input line 588.
 (pdftex.def)             Requested size: 216.81pt x 105.44255pt.
-File: image-introduction-methodsCompare/3-left-image_00000615_0-inputs.png Grap
+
+<experiment-results/myExampare/ours/lp-left-image_00004944_0-inputs.png, id=39,
+ 256.96pt x 256.96pt>
+File: experiment-results/myExampare/ours/lp-left-image_00004944_0-inputs.png Gr
+aphic file (type png)
+
+<use experiment-results/myExampare/ours/lp-left-image_00004944_0-inputs.png>
+Package pdftex.def Info: experiment-results/myExampare/ours/lp-left-image_00004
+944_0-inputs.png used on input line 597.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
+
+<experiment-results/myExampare/ours/lp-left-image_00004944_0-conditions.png, id
+=40, 256.96pt x 256.96pt>
+File: experiment-results/myExampare/ours/lp-left-image_00004944_0-conditions.pn
+g Graphic file (type png)
+
+<use experiment-results/myExampare/ours/lp-left-image_00004944_0-conditions.png
+>
+Package pdftex.def Info: experiment-results/myExampare/ours/lp-left-image_00004
+944_0-conditions.png used on input line 600.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
+
+<experiment-results/myExampare/ours/lp-left-image_00004944_0-targets.png, id=41
+, 256.96pt x 256.96pt>
+File: experiment-results/myExampare/ours/lp-left-image_00004944_0-targets.png G
+raphic file (type png)
+
+<use experiment-results/myExampare/ours/lp-left-image_00004944_0-targets.png>
+Package pdftex.def Info: experiment-results/myExampare/ours/lp-left-image_00004
+944_0-targets.png used on input line 603.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
+
+<experiment-results/myExampare/ours/lp-left-image_00004944_0-stns.png, id=42, 2
+56.96pt x 256.96pt>
+File: experiment-results/myExampare/ours/lp-left-image_00004944_0-stns.png Grap
 hic file (type png)
 
-<use image-introduction-methodsCompare/3-left-image_00000615_0-inputs.png>
-Package pdftex.def Info: image-introduction-methodsCompare/3-left-image_0000061
-5_0-inputs.png used on input line 608.
+<use experiment-results/myExampare/ours/lp-left-image_00004944_0-stns.png>
+Package pdftex.def Info: experiment-results/myExampare/ours/lp-left-image_00004
+944_0-stns.png used on input line 606.
 (pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
-File: image-introduction-methodsCompare/3-left-image_00000615_0-conditions.png 
+
+<experiment-results/myExampare/ours/lp-left-image_00004944_0-outputs.png, id=43
+, 256.96pt x 256.96pt>
+File: experiment-results/myExampare/ours/lp-left-image_00004944_0-outputs.png G
+raphic file (type png)
+
+<use experiment-results/myExampare/ours/lp-left-image_00004944_0-outputs.png>
+Package pdftex.def Info: experiment-results/myExampare/ours/lp-left-image_00004
+944_0-outputs.png used on input line 609.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
+
+<experiment-results/myExampare/PatchMatch/lp-left-image_00004944_0-outputs.png,
+ id=44, 256.96pt x 256.96pt>
+File: experiment-results/myExampare/PatchMatch/lp-left-image_00004944_0-outputs
+.png Graphic file (type png)
+
+<use experiment-results/myExampare/PatchMatch/lp-left-image_00004944_0-outputs.
+png>
+Package pdftex.def Info: experiment-results/myExampare/PatchMatch/lp-left-image
+_00004944_0-outputs.png used on input line 612.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
+
+<experiment-results/myExampare/L2&noCondition/lp-left-image_00004944_0-outputs.
+png, id=45, 256.96pt x 256.96pt>
+File: experiment-results/myExampare/L2&noCondition/lp-left-image_00004944_0-out
+puts.png Graphic file (type png)
+
+<use experiment-results/myExampare/L2&noCondition/lp-left-image_00004944_0-outp
+uts.png>
+Package pdftex.def Info: experiment-results/myExampare/L2&noCondition/lp-left-i
+mage_00004944_0-outputs.png used on input line 615.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
+
+<experiment-results/myExampare/noMultiViews/lp-left-image_00004944_0-outputs.pn
+g, id=46, 256.96pt x 256.96pt>
+File: experiment-results/myExampare/noMultiViews/lp-left-image_00004944_0-outpu
+ts.png Graphic file (type png)
+
+<use experiment-results/myExampare/noMultiViews/lp-left-image_00004944_0-output
+s.png>
+Package pdftex.def Info: experiment-results/myExampare/noMultiViews/lp-left-ima
+ge_00004944_0-outputs.png used on input line 618.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
+
+<experiment-results/myExampare/noShuffle/lp-left-image_00004944_0-outputs.png, 
+id=47, 256.96pt x 256.96pt>
+File: experiment-results/myExampare/noShuffle/lp-left-image_00004944_0-outputs.
+png Graphic file (type png)
+
+<use experiment-results/myExampare/noShuffle/lp-left-image_00004944_0-outputs.p
+ng>
+Package pdftex.def Info: experiment-results/myExampare/noShuffle/lp-left-image_
+00004944_0-outputs.png used on input line 621.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
+
+<experiment-results/myExampare/noSTN/lp-left-image_00004944_0-outputs.png, id=4
+8, 256.96pt x 256.96pt>
+File: experiment-results/myExampare/noSTN/lp-left-image_00004944_0-outputs.png 
 Graphic file (type png)
 
-<use image-introduction-methodsCompare/3-left-image_00000615_0-conditions.png>
-Package pdftex.def Info: image-introduction-methodsCompare/3-left-image_0000061
-5_0-conditions.png used on input line 611.
+<use experiment-results/myExampare/noSTN/lp-left-image_00004944_0-outputs.png>
+Package pdftex.def Info: experiment-results/myExampare/noSTN/lp-left-image_0000
+4944_0-outputs.png used on input line 624.
 (pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
-File: image-introduction-methodsCompare/3-left-image_00000615_0-targets.png Gra
-phic file (type png)
 
-<use image-introduction-methodsCompare/3-left-image_00000615_0-targets.png>
-Package pdftex.def Info: image-introduction-methodsCompare/3-left-image_0000061
-5_0-targets.png used on input line 614.
-(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
-File: image-introduction-methodsCompare/3-left-image_00000615_0-patchMatch_outp
-ut.png Graphic file (type png)
+<experiment-results/myExampare/noGAN/lp-left-image_00004944_0-outputs.png, id=4
+9, 256.96pt x 256.96pt>
+File: experiment-results/myExampare/noGAN/lp-left-image_00004944_0-outputs.png 
+Graphic file (type png)
 
-<use image-introduction-methodsCompare/3-left-image_00000615_0-patchMatch_outpu
-t.png>
-Package pdftex.def Info: image-introduction-methodsCompare/3-left-image_0000061
-5_0-patchMatch_output.png used on input line 617.
+<use experiment-results/myExampare/noGAN/lp-left-image_00004944_0-outputs.png>
+Package pdftex.def Info: experiment-results/myExampare/noGAN/lp-left-image_0000
+4944_0-outputs.png used on input line 627.
 (pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
-File: image-introduction-methodsCompare/3-left-image_00000615_0-noMultiViews_ou
-tputs.png Graphic file (type png)
 
-<use image-introduction-methodsCompare/3-left-image_00000615_0-noMultiViews_out
-puts.png>
-Package pdftex.def Info: image-introduction-methodsCompare/3-left-image_0000061
-5_0-noMultiViews_outputs.png used on input line 620.
-(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
-File: image-introduction-methodsCompare/3-left-image_00000615_0-our_outputs.png
- Graphic file (type png)
+<experiment-results/myExampare/noL1/lp-left-image_00004944_0-outputs.png, id=50
+, 256.96pt x 256.96pt>
+File: experiment-results/myExampare/noL1/lp-left-image_00004944_0-outputs.png G
+raphic file (type png)
 
-<use image-introduction-methodsCompare/3-left-image_00000615_0-our_outputs.png>
-Package pdftex.def Info: image-introduction-methodsCompare/3-left-image_0000061
-5_0-our_outputs.png used on input line 623.
+<use experiment-results/myExampare/noL1/lp-left-image_00004944_0-outputs.png>
+Package pdftex.def Info: experiment-results/myExampare/noL1/lp-left-image_00004
+944_0-outputs.png used on input line 630.
 (pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
+
 [4 <./stn.png> <./interpolation.png> <./CGAN.png>]
-File: image-introduction-methodsCompare/3-left-image_00000615_0-inputs.png Grap
-hic file (type png)
-
-<use image-introduction-methodsCompare/3-left-image_00000615_0-inputs.png>
-Package pdftex.def Info: image-introduction-methodsCompare/3-left-image_0000061
-5_0-inputs.png used on input line 651.
-(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
-File: image-introduction-methodsCompare/3-left-image_00000615_0-conditions.png 
-Graphic file (type png)
-
-<use image-introduction-methodsCompare/3-left-image_00000615_0-conditions.png>
-Package pdftex.def Info: image-introduction-methodsCompare/3-left-image_0000061
-5_0-conditions.png used on input line 654.
-(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
-File: image-introduction-methodsCompare/3-left-image_00000615_0-targets.png Gra
+<experiment-results/myExampare/ours/1-left-image_00000117_0-inputs.png, id=55, 
+256.96pt x 256.96pt>
+File: experiment-results/myExampare/ours/1-left-image_00000117_0-inputs.png Gra
 phic file (type png)
 
-<use image-introduction-methodsCompare/3-left-image_00000615_0-targets.png>
-Package pdftex.def Info: image-introduction-methodsCompare/3-left-image_0000061
-5_0-targets.png used on input line 657.
+<use experiment-results/myExampare/ours/1-left-image_00000117_0-inputs.png>
+Package pdftex.def Info: experiment-results/myExampare/ours/1-left-image_000001
+17_0-inputs.png used on input line 669.
 (pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
-File: image-introduction-methodsCompare/3-left-image_00000615_0-patchMatch_outp
-ut.png Graphic file (type png)
 
-<use image-introduction-methodsCompare/3-left-image_00000615_0-patchMatch_outpu
-t.png>
-Package pdftex.def Info: image-introduction-methodsCompare/3-left-image_0000061
-5_0-patchMatch_output.png used on input line 660.
-(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
-File: image-introduction-methodsCompare/3-left-image_00000615_0-noMultiViews_ou
-tputs.png Graphic file (type png)
-
-<use image-introduction-methodsCompare/3-left-image_00000615_0-noMultiViews_out
-puts.png>
-Package pdftex.def Info: image-introduction-methodsCompare/3-left-image_0000061
-5_0-noMultiViews_outputs.png used on input line 663.
-(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
-File: image-introduction-methodsCompare/3-left-image_00000615_0-our_outputs.png
+<experiment-results/myExampare/ours/1-left-image_00000117_0-conditions.png, id=
+56, 256.96pt x 256.96pt>
+File: experiment-results/myExampare/ours/1-left-image_00000117_0-conditions.png
  Graphic file (type png)
 
-<use image-introduction-methodsCompare/3-left-image_00000615_0-our_outputs.png>
-Package pdftex.def Info: image-introduction-methodsCompare/3-left-image_0000061
-5_0-our_outputs.png used on input line 666.
+<use experiment-results/myExampare/ours/1-left-image_00000117_0-conditions.png>
+Package pdftex.def Info: experiment-results/myExampare/ours/1-left-image_000001
+17_0-conditions.png used on input line 672.
 (pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
 
-(./Multi-view Scene Image Inpainting Based on Conditional Generative Adversaria
-l Networks.bbl [5]) [6]
-(./Multi-view Scene Image Inpainting Based on Conditional Generative Adversaria
-l Networks.aux)
+<experiment-results/myExampare/ours/1-left-image_00000117_0-targets.png, id=57,
+ 256.96pt x 256.96pt>
+File: experiment-results/myExampare/ours/1-left-image_00000117_0-targets.png Gr
+aphic file (type png)
 
-LaTeX Warning: There were multiply-defined labels.
+<use experiment-results/myExampare/ours/1-left-image_00000117_0-targets.png>
+Package pdftex.def Info: experiment-results/myExampare/ours/1-left-image_000001
+17_0-targets.png used on input line 675.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
 
- ) 
+<experiment-results/myExampare/ours/1-left-image_00000117_0-stns.png, id=58, 25
+6.96pt x 256.96pt>
+File: experiment-results/myExampare/ours/1-left-image_00000117_0-stns.png Graph
+ic file (type png)
+
+<use experiment-results/myExampare/ours/1-left-image_00000117_0-stns.png>
+Package pdftex.def Info: experiment-results/myExampare/ours/1-left-image_000001
+17_0-stns.png used on input line 678.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
+
+<experiment-results/myExampare/ours/1-left-image_00000117_0-outputs.png, id=59,
+ 256.96pt x 256.96pt>
+File: experiment-results/myExampare/ours/1-left-image_00000117_0-outputs.png Gr
+aphic file (type png)
+
+<use experiment-results/myExampare/ours/1-left-image_00000117_0-outputs.png>
+Package pdftex.def Info: experiment-results/myExampare/ours/1-left-image_000001
+17_0-outputs.png used on input line 681.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
+
+<experiment-results/myExampare/PatchMatch/1-left-image_00000117_0-outputs.png, 
+id=60, 256.96pt x 256.96pt>
+File: experiment-results/myExampare/PatchMatch/1-left-image_00000117_0-outputs.
+png Graphic file (type png)
+
+<use experiment-results/myExampare/PatchMatch/1-left-image_00000117_0-outputs.p
+ng>
+Package pdftex.def Info: experiment-results/myExampare/PatchMatch/1-left-image_
+00000117_0-outputs.png used on input line 684.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
+
+<experiment-results/myExampare/L2&noCondition/1-left-image_00000117_0-outputs.p
+ng, id=61, 256.96pt x 256.96pt>
+File: experiment-results/myExampare/L2&noCondition/1-left-image_00000117_0-outp
+uts.png Graphic file (type png)
+
+<use experiment-results/myExampare/L2&noCondition/1-left-image_00000117_0-outpu
+ts.png>
+Package pdftex.def Info: experiment-results/myExampare/L2&noCondition/1-left-im
+age_00000117_0-outputs.png used on input line 687.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
+
+<experiment-results/myExampare/noMultiViews/1-left-image_00000117_0-outputs.png
+, id=62, 256.96pt x 256.96pt>
+File: experiment-results/myExampare/noMultiViews/1-left-image_00000117_0-output
+s.png Graphic file (type png)
+
+<use experiment-results/myExampare/noMultiViews/1-left-image_00000117_0-outputs
+.png>
+Package pdftex.def Info: experiment-results/myExampare/noMultiViews/1-left-imag
+e_00000117_0-outputs.png used on input line 690.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
+
+<experiment-results/myExampare/noShuffle/1-left-image_00000117_0-outputs.png, i
+d=63, 256.96pt x 256.96pt>
+File: experiment-results/myExampare/noShuffle/1-left-image_00000117_0-outputs.p
+ng Graphic file (type png)
+
+<use experiment-results/myExampare/noShuffle/1-left-image_00000117_0-outputs.pn
+g>
+Package pdftex.def Info: experiment-results/myExampare/noShuffle/1-left-image_0
+0000117_0-outputs.png used on input line 693.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
+
+<experiment-results/myExampare/noSTN/1-left-image_00000117_0-outputs.png, id=64
+, 256.96pt x 256.96pt>
+File: experiment-results/myExampare/noSTN/1-left-image_00000117_0-outputs.png G
+raphic file (type png)
+
+<use experiment-results/myExampare/noSTN/1-left-image_00000117_0-outputs.png>
+Package pdftex.def Info: experiment-results/myExampare/noSTN/1-left-image_00000
+117_0-outputs.png used on input line 696.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
+
+<experiment-results/myExampare/noGAN/1-left-image_00000117_0-outputs.png, id=65
+, 256.96pt x 256.96pt>
+File: experiment-results/myExampare/noGAN/1-left-image_00000117_0-outputs.png G
+raphic file (type png)
+
+<use experiment-results/myExampare/noGAN/1-left-image_00000117_0-outputs.png>
+Package pdftex.def Info: experiment-results/myExampare/noGAN/1-left-image_00000
+117_0-outputs.png used on input line 699.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
+
+<experiment-results/myExampare/noL1/1-left-image_00000117_0-outputs.png, id=66,
+ 256.96pt x 256.96pt>
+File: experiment-results/myExampare/noL1/1-left-image_00000117_0-outputs.png Gr
+aphic file (type png)
+
+<use experiment-results/myExampare/noL1/1-left-image_00000117_0-outputs.png>
+Package pdftex.def Info: experiment-results/myExampare/noL1/1-left-image_000001
+17_0-outputs.png used on input line 702.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
+
+<experiment-results/myExampare/ours/5-left-image_00000604_0-inputs.png, id=67, 
+256.96pt x 256.96pt>
+File: experiment-results/myExampare/ours/5-left-image_00000604_0-inputs.png Gra
+phic file (type png)
+
+<use experiment-results/myExampare/ours/5-left-image_00000604_0-inputs.png>
+Package pdftex.def Info: experiment-results/myExampare/ours/5-left-image_000006
+04_0-inputs.png used on input line 711.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
+
+<experiment-results/myExampare/ours/5-left-image_00000604_0-conditions.png, id=
+68, 256.96pt x 256.96pt>
+File: experiment-results/myExampare/ours/5-left-image_00000604_0-conditions.png
+ Graphic file (type png)
+
+<use experiment-results/myExampare/ours/5-left-image_00000604_0-conditions.png>
+Package pdftex.def Info: experiment-results/myExampare/ours/5-left-image_000006
+04_0-conditions.png used on input line 714.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
+
+<experiment-results/myExampare/ours/5-left-image_00000604_0-targets.png, id=69,
+ 256.96pt x 256.96pt>
+File: experiment-results/myExampare/ours/5-left-image_00000604_0-targets.png Gr
+aphic file (type png)
+
+<use experiment-results/myExampare/ours/5-left-image_00000604_0-targets.png>
+Package pdftex.def Info: experiment-results/myExampare/ours/5-left-image_000006
+04_0-targets.png used on input line 717.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
+
+<experiment-results/myExampare/ours/5-left-image_00000604_0-stns.png, id=70, 25
+6.96pt x 256.96pt>
+File: experiment-results/myExampare/ours/5-left-image_00000604_0-stns.png Graph
+ic file (type png)
+
+<use experiment-results/myExampare/ours/5-left-image_00000604_0-stns.png>
+Package pdftex.def Info: experiment-results/myExampare/ours/5-left-image_000006
+04_0-stns.png used on input line 720.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
+
+<experiment-results/myExampare/ours/5-left-image_00000604_0-outputs.png, id=71,
+ 256.96pt x 256.96pt>
+File: experiment-results/myExampare/ours/5-left-image_00000604_0-outputs.png Gr
+aphic file (type png)
+
+<use experiment-results/myExampare/ours/5-left-image_00000604_0-outputs.png>
+Package pdftex.def Info: experiment-results/myExampare/ours/5-left-image_000006
+04_0-outputs.png used on input line 723.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
+
+<experiment-results/myExampare/PatchMatch/5-left-image_00000604_0-outputs.png, 
+id=72, 256.96pt x 256.96pt>
+File: experiment-results/myExampare/PatchMatch/5-left-image_00000604_0-outputs.
+png Graphic file (type png)
+
+<use experiment-results/myExampare/PatchMatch/5-left-image_00000604_0-outputs.p
+ng>
+Package pdftex.def Info: experiment-results/myExampare/PatchMatch/5-left-image_
+00000604_0-outputs.png used on input line 726.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
+
+<experiment-results/myExampare/L2&noCondition/5-left-image_00000604_0-outputs.p
+ng, id=73, 256.96pt x 256.96pt>
+File: experiment-results/myExampare/L2&noCondition/5-left-image_00000604_0-outp
+uts.png Graphic file (type png)
+
+<use experiment-results/myExampare/L2&noCondition/5-left-image_00000604_0-outpu
+ts.png>
+Package pdftex.def Info: experiment-results/myExampare/L2&noCondition/5-left-im
+age_00000604_0-outputs.png used on input line 729.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
+
+<experiment-results/myExampare/noMultiViews/5-left-image_00000604_0-outputs.png
+, id=74, 256.96pt x 256.96pt>
+File: experiment-results/myExampare/noMultiViews/5-left-image_00000604_0-output
+s.png Graphic file (type png)
+
+<use experiment-results/myExampare/noMultiViews/5-left-image_00000604_0-outputs
+.png>
+Package pdftex.def Info: experiment-results/myExampare/noMultiViews/5-left-imag
+e_00000604_0-outputs.png used on input line 732.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
+
+<experiment-results/myExampare/noShuffle/5-left-image_00000604_0-outputs.png, i
+d=75, 256.96pt x 256.96pt>
+File: experiment-results/myExampare/noShuffle/5-left-image_00000604_0-outputs.p
+ng Graphic file (type png)
+
+<use experiment-results/myExampare/noShuffle/5-left-image_00000604_0-outputs.pn
+g>
+Package pdftex.def Info: experiment-results/myExampare/noShuffle/5-left-image_0
+0000604_0-outputs.png used on input line 735.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
+
+<experiment-results/myExampare/noSTN/5-left-image_00000604_0-outputs.png, id=76
+, 256.96pt x 256.96pt>
+File: experiment-results/myExampare/noSTN/5-left-image_00000604_0-outputs.png G
+raphic file (type png)
+
+<use experiment-results/myExampare/noSTN/5-left-image_00000604_0-outputs.png>
+Package pdftex.def Info: experiment-results/myExampare/noSTN/5-left-image_00000
+604_0-outputs.png used on input line 738.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
+
+<experiment-results/myExampare/noGAN/5-left-image_00000604_0-outputs.png, id=77
+, 256.96pt x 256.96pt>
+File: experiment-results/myExampare/noGAN/5-left-image_00000604_0-outputs.png G
+raphic file (type png)
+
+<use experiment-results/myExampare/noGAN/5-left-image_00000604_0-outputs.png>
+Package pdftex.def Info: experiment-results/myExampare/noGAN/5-left-image_00000
+604_0-outputs.png used on input line 741.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
+
+<experiment-results/myExampare/noL1/5-left-image_00000604_0-outputs.png, id=78,
+ 256.96pt x 256.96pt>
+File: experiment-results/myExampare/noL1/5-left-image_00000604_0-outputs.png Gr
+aphic file (type png)
+
+<use experiment-results/myExampare/noL1/5-left-image_00000604_0-outputs.png>
+Package pdftex.def Info: experiment-results/myExampare/noL1/5-left-image_000006
+04_0-outputs.png used on input line 744.
+(pdftex.def)             Requested size: 72.26999pt x 72.26982pt.
+
+Overfull \hbox (3.4167pt too wide) in paragraph at lines 754--777
+ [][] 
+ []
+
+
+(./Multi-view Scene Image Inpainting Based on Conditional Generative Adversaria
+l Networks.bbl [5 <./experiment-results/myExampare/ours/lp-left-image_00004944_
+0-inputs.png (PNG copy)> <./experiment-results/myExampare/ours/lp-left-image_00
+004944_0-conditions.png (PNG copy)> <./experiment-results/myExampare/ours/lp-le
+ft-image_00004944_0-targets.png (PNG copy)> <./experiment-results/myExampare/ou
+rs/lp-left-image_00004944_0-stns.png (PNG copy)> <./experiment-results/myExampa
+re/ours/lp-left-image_00004944_0-outputs.png (PNG copy)> <./experiment-results/
+myExampare/PatchMatch/lp-left-image_00004944_0-outputs.png (PNG copy)> <./exper
+iment-results/myExampare/L2&noCondition/lp-left-image_00004944_0-outputs.png (P
+NG copy)> <./experiment-results/myExampare/noMultiViews/lp-left-image_00004944_
+0-outputs.png (PNG copy)> <./experiment-results/myExampare/noShuffle/lp-left-im
+age_00004944_0-outputs.png (PNG copy)> <./experiment-results/myExampare/noSTN/l
+p-left-image_00004944_0-outputs.png (PNG copy)> <./experiment-results/myExampar
+e/noGAN/lp-left-image_00004944_0-outputs.png (PNG copy)> <./experiment-results/
+myExampare/noL1/lp-left-image_00004944_0-outputs.png (PNG copy)>] [6 <./experim
+ent-results/myExampare/ours/1-left-image_00000117_0-inputs.png (PNG copy)> <./e
+xperiment-results/myExampare/ours/1-left-image_00000117_0-conditions.png (PNG c
+opy)> <./experiment-results/myExampare/ours/1-left-image_00000117_0-targets.png
+ (PNG copy)> <./experiment-results/myExampare/ours/1-left-image_00000117_0-stns
+.png (PNG copy)> <./experiment-results/myExampare/ours/1-left-image_00000117_0-
+outputs.png (PNG copy)> <./experiment-results/myExampare/PatchMatch/1-left-imag
+e_00000117_0-outputs.png (PNG copy)> <./experiment-results/myExampare/L2&noCond
+ition/1-left-image_00000117_0-outputs.png (PNG copy)> <./experiment-results/myE
+xampare/noMultiViews/1-left-image_00000117_0-outputs.png (PNG copy)> <./experim
+ent-results/myExampare/noShuffle/1-left-image_00000117_0-outputs.png (PNG copy)
+> <./experiment-results/myExampare/noSTN/1-left-image_00000117_0-outputs.png (P
+NG copy)> <./experiment-results/myExampare/noGAN/1-left-image_00000117_0-output
+s.png (PNG copy)> <./experiment-results/myExampare/noL1/1-left-image_00000117_0
+-outputs.png (PNG copy)> <./experiment-results/myExampare/ours/5-left-image_000
+00604_0-inputs.png (PNG copy)> <./experiment-results/myExampare/ours/5-left-ima
+ge_00000604_0-conditions.png (PNG copy)> <./experiment-results/myExampare/ours/
+5-left-image_00000604_0-targets.png (PNG copy)> <./experiment-results/myExampar
+e/ours/5-left-image_00000604_0-stns.png (PNG copy)> <./experiment-results/myExa
+mpare/ours/5-left-image_00000604_0-outputs.png (PNG copy)> <./experiment-result
+s/myExampare/PatchMatch/5-left-image_00000604_0-outputs.png (PNG copy)> <./expe
+riment-results/myExampare/L2&noCondition/5-left-image_00000604_0-outputs.png (P
+NG copy)> <./experiment-results/myExampare/noMultiViews/5-left-image_00000604_0
+-outputs.png (PNG copy)> <./experiment-results/myExampare/noShuffle/5-left-imag
+e_00000604_0-outputs.png (PNG copy)> <./experiment-results/myExampare/noSTN/5-l
+eft-image_00000604_0-outputs.png (PNG copy)> <./experiment-results/myExampare/n
+oGAN/5-left-image_00000604_0-outputs.png (PNG copy)> <./experiment-results/myEx
+ampare/noL1/5-left-image_00000604_0-outputs.png (PNG copy)>]) [7
+
+]
+(./Multi-view Scene Image Inpainting Based on Conditional Generative Adversaria
+l Networks.aux) ) 
 Here is how much of TeX's memory you used:
- 5991 strings out of 495028
- 89012 string characters out of 6181497
- 141495 words of memory out of 5000000
- 9029 multiletter control sequences out of 15000+600000
- 220264 words of font info for 284 fonts, out of 8000000 for 9000
+ 6223 strings out of 495028
+ 102814 string characters out of 6181497
+ 149045 words of memory out of 5000000
+ 9237 multiletter control sequences out of 15000+600000
+ 221371 words of font info for 285 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
- 53i,10n,92p,1467b,435s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/newtx/rntxmi.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/newtx/rntxmi5.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ne
-wtx/rtxmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txex-bar.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
+ 53i,10n,92p,1815b,431s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</u
+sr/share/texlive/texmf-dist/fonts/type1/public/newtx/rntxmi.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/newtx/rntxmi5.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/newtx/rtxmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txex-
+bar.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
 tmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
 Output written on "Multi-view Scene Image Inpainting Based on Conditional Gener
-ative Adversarial Networks.pdf" (6 pages, 2195432 bytes).
+ative Adversarial Networks.pdf" (7 pages, 5622925 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
+ 135 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 236 words of extra memory for PDF output out of 10000 (max. 10000000)
 
