@@ -591,7 +591,7 @@ However, the modes of the generator produces is stochastic and uncontrollable. M
 \end{figure}
 In generator, we use both left defective image($\tilde{x}$) and the corresponding right image(y) to reconstruct the original intact left image($G(y,\tilde{x})$). The discriminator distinguishes between fake $\{y, G(y,\tilde{x})\}$ and real $\{y, x\}$  tuples. 
 
-\begin{figure*}[t]
+\begin{figure*}[!t]
 \centering
 \subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/ours/lp-left-image_00004944_0-inputs.png}%
 \label{fig:experiment3:input}}
@@ -663,7 +663,7 @@ We build our models in tensorflow. We set the reconstructed loss weight ${\lambd
 
 \subsection{Experimental Results}
 
-\begin{figure*}[t]
+\begin{figure*}[!t]
 \centering
 \subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/ours/1-left-image_00000117_0-inputs.png}%
 \label{fig:experiment:input}}
@@ -705,7 +705,7 @@ We build our models in tensorflow. We set the reconstructed loss weight ${\lambd
 \end{figure*}
 
 
-\begin{figure*}[t]
+\begin{figure*}[!t]
 \centering
 \subfloat[]{\includegraphics[width=1.0in]{experiment-results/myExampare/ours/5-left-image_00000604_0-inputs.png}%
 \label{fig:experiment2:input}}
@@ -748,7 +748,7 @@ We build our models in tensorflow. We set the reconstructed loss weight ${\lambd
 
 In order to evaluates our proposed approach visually and quantitatively. We compared our approach with other methods, including PatchMatch, Context-Encoder and Image-to-Image, demonstrating its effectiveness in image inpainting. We further analyzed impact of each strategy applied in our approach by remove individual components one by one. We show some results in Fig \ref{fig:experiment3}, Fig \ref{fig:experiment}, Fig \ref{fig:experiment2}. As we can see in Fig \ref{fig:experiment3:patchMatch}, Fig \ref{fig:experiment:patchMatch} and Fig \ref{fig:experiment2:patchMatch}, PatchMatch filling the hole according the surrounding, when objects to restore in the blank is different from the surrounding, PatchMatch result will missing it whole. For example, the slender pipe in \ref{fig:experiment3:patchMatch}, the boy hand in \ref{fig:experiment:patchMatch} and the red bag in \ref{fig:experiment2:patchMatch} are all missing. Context-Encoder and Image-to-Image results have obvious artifacts. Because the two methods generate blocks "out of thin air". especially the Context-Encoder, which has no skip connection from encoder to decoder, most detail need to reconstruct. Our methods in the help of other viewpoint information can produce best quality image(Fig \ref{fig:experiment3:ours}, Fig \ref{fig:experiment:ours}, Fig \ref{fig:experiment2:ours}). When remove L1 Loss in our method, the generator has no guidance and the result more chaotic and sharp (Fig \ref{fig:experiment3:noL1}, Fig \ref{fig:experiment:noL1}, Fig \ref{fig:experiment2:noL1}). On the contrary, When remove adversarial loss in our method, the result is blurry (Fig \ref{fig:experiment3:noGAN}, Fig \ref{fig:experiment:noGAN}, Fig \ref{fig:experiment2:noGAN}). Compared (e) with (i) and (j) we find that using group convolution, channel shuffle and spatial transform networks can improve the quality of result images slightly. See the STN result images (Fig \ref{fig:experiment3:stn}, Fig \ref{fig:experiment:stn} and Fig \ref{fig:experiment2:stn}), the right images are be slightly transformed to left in order to achieve the purpose of aligning the scene between left image and right image. We think all the strategies we adopt can better improve the information fusion between multi-view.
 Table \ref{resultTable} reports quantitative results, our method achieves highest numerical performance. 
-\begin{table}[!t]
+\begin{table}[htbp]
   \caption{Image inpainting accuracy for different methods.}
   \centering
   \begin{tabular}{c|c|c|c}
@@ -776,7 +776,7 @@ Table \ref{resultTable} reports quantitative results, our method achieves highes
   \label{resultTable}
 \end{table}
 In addition, we tested the inpainting effect of our method in any damaged area in the image. Fig shows the results.
-\begin{figure*}[t]
+\begin{figure*}[!t]
 \centering
 \subfloat[]{\includegraphics[width=1.0in]{random/3-left-image_00000615_0-inputs.png}%
 \label{fig:experiment_random:input}}
@@ -797,7 +797,7 @@ In addition, we tested the inpainting effect of our method in any damaged area i
 \label{fig:experiment_random}
 \end{figure*}
 
-\begin{figure*}[t]
+\begin{figure*}[!t]
 \centering
 \subfloat[]{\includegraphics[width=1.0in]{random/5-left-image_00000826_0-inputs.png}%
 \label{fig:experiment_random2:input}}
@@ -818,7 +818,7 @@ In addition, we tested the inpainting effect of our method in any damaged area i
 \label{fig:experiment_random2}
 \end{figure*}
 
-\begin{figure*}[t]
+\begin{figure*}[!t]
 \centering
 \subfloat[]{\includegraphics[width=1.0in]{random/lp-left-image_00005496_0-inputs.png}%
 \label{fig:experiment_random3:input}}
@@ -839,7 +839,7 @@ In addition, we tested the inpainting effect of our method in any damaged area i
 \label{fig:experiment_random3}
 \end{figure*}
 
-\begin{figure*}[t]
+\begin{figure*}[!t]
 \centering
 \subfloat[]{\includegraphics[width=1.0in]{random/sun-left-image_00000418_0-inputs.png}%
 \label{fig:experiment_random4:input}}
@@ -860,7 +860,6 @@ In addition, we tested the inpainting effect of our method in any damaged area i
 \label{fig:experiment_random4}
 \end{figure*}
 %\footnote{IEEE Sensors Letters does allow footnotes.}
-
 
 % An example of a floating figure using the graphicx package.
 % Note that \label must occur AFTER (or within) \caption.
@@ -894,7 +893,6 @@ In addition, we tested the inpainting effect of our method in any damaged area i
 %\label{fig_sim}
 %\end{figure}
 
-
 % An example of a figure with subfigures using the subfig.sty package.
 % (The subfig.sty package must be loaded for this to work.)
 % The subfigure \label commands are set within each subfloat command,
@@ -920,7 +918,6 @@ In addition, we tested the inpainting effect of our method in any damaged area i
 % With subfig.sty, you still have to invoke the option argument
 % (subfig caption) of \subfloat[]{} to get the (a), (b) labels, even if
 % the subfig caption/description itself is empty.
-
 
 % An example of a floating table. Note that, for IEEE style tables, the
 % \caption command should come BEFORE the table and, given that table
@@ -992,12 +989,9 @@ In addition, we tested the inpainting effect of our method in any damaged area i
 %\end{tabular*}
 %\end{table}
 
-
-
 \section{Conclusion}
-The conclusion goes here.
 
-
+In this study, we propose a novel image inpainting method, which can be used in multi-views system. Our methods is fusion other viewpoint images to restore defective image. The basic structure of our method is condition generation networks, in which the priori condition is the synchronization frame of other cameras from different viewpoints.  In order to make the images from other viewpoints better guide the anomalous image to be repaired, the spatial transform networks are introduced to carry out affine transform for other viewpoints images to achieve the purpose of multi-view scene alignment in the abnormal area. In order to better utilize the complete information from other viewpoints into the defect image, group convolution and channel shuffle are used to process these images and fuse information. Experiments show that our method are effective and can reconstruct the defective images with a high quality. In addition, the speed remains a bottleneck for real time inpainting. We aim to address these issues in future work.
 
 % use section* for acknowledgment
 \section*{Acknowledgment}
